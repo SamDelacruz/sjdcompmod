@@ -1,0 +1,193 @@
+/**
+* Solution to Question 7 part (iii) of Worksheet 1
+* Program solves for x, x^3 + 7x^2 - 6x + 15 = 0
+* using the Newton-Raphson Method
+* Compares actual value to computed value to output a value of error
+*
+* User should supply number of iterations as a command line argument
+* when executing the program, followed by the starting value of x
+* followed by the filename of the datafile to be stored. Eg) > ./q7.o 50 15.0 q7_nr_1.dat
+* 
+* Name:		Samuel Delacruz
+* ID:		1090154
+* Email:	SJD054@bham.ac.uk
+* Date:		20-10-2013
+**/
+#include <iostream>
+#include <fstream>
+#include <math.h>
+#include <vector>
+#include <iomanip>
+#include <string>
+
+using namespace std;
+
+//BEGIN FUNCTION DECLARATIONS
+double f(double);
+double fprime(double);
+double f2prime(double);
+void printMultiple(vector< vector<double> >&);
+vector<vector<double> > calculateResults(int);
+void fileMultiple(vector< vector<double> >&, string);
+//END FUNCTION DECLARATIONS
+
+double INIT_X = 20.0f;//re-set by command line args later
+string DATA_FILENAME = "q7_nr.dat";//re-set by command line args later
+//BEGIN CONSTANTS
+
+const double X_R = -7.986444305737211f;
+
+//END CONSTANTS
+
+//BEGIN MAIN
+int main(int argc, char* argv[]){
+	
+	//BEGIN COMMAND LINE ARGUMENT CHECKING
+	if(argc < 4){
+		//inform the user of correct usage
+		cout << "Correct usage: " << argv[0] << " N X {OUTPUT_FILENAME}" << endl;
+		return -1;
+	}
+	
+	//Parse user input as integer
+	int N = atoi(argv[1]);
+	INIT_X = atoi(argv[2]);
+	//set filename
+	DATA_FILENAME = argv[3];
+	//check for positive N
+	if(N < 0){
+	
+		cout << "Error: Positive N only" << endl;
+		return -1;
+	}
+	//END COMMAND LINE ARGUMENT CHECKING
+	
+	vector<vector<double> > results = calculateResults(N);
+	printMultiple(results);
+	fileMultiple(results, DATA_FILENAME);
+	return 0;
+
+}
+//END MAIN
+
+//BEGIN HELPER FUNCTION IMPLEMENTATIONS
+
+/*
+* Function to calculate table of results of theta
+* and corresponding uncertainty, given number of iterations to perform
+*/
+vector<vector<double> > calculateResults(int n){
+	//Set initial x and error values
+	double xn = INIT_X;
+	double err = xn - X_R;
+	
+	//create data structures to hold values calculated
+	vector<double> xs(n+1);
+	vector<double> errors(n+1);
+	vector<vector<double> > table(2);
+	
+	xs.at(0) = xn;
+	errors.at(0) = err;
+	
+	for(int i = 1; i < xs.size(); i++){
+		
+		xn = xn - (f(xn)/fprime(xn));
+		err = xn - X_R;
+		
+		xs.at(i) = xn;
+		errors.at(i) = err;		
+		
+	}
+	
+	table.at(0) = xs;
+	table.at(1) = errors;
+	
+	return table;
+}
+
+/*
+* Function for printing multiple data sets, tabulated
+* Must use equal sized data sets
+*/
+void printMultiple(vector< vector<double> >& results){
+
+	//print headers
+	cout << "\nIteration\tx_n\tError_n\n";
+	
+	//Iterate over each n value
+	for(int n = 0; n < results.at(0).size(); n++){
+		
+		//print iteration number
+		cout << n << "\t";
+		
+		//Iterate over columns
+		for(int j = 0; j < results.size(); j++){
+
+			cout << setprecision(15) << scientific << results.at(j).at(n) << "\t";
+
+		}
+
+		//newline
+		cout << endl;
+
+	}
+}
+
+/*
+* Function for printing multiple data sets, tabulated
+* Must use equal sized data sets
+*/
+void fileMultiple(vector< vector<double> >& results, string fname){
+
+	ofstream dataFile(fname.c_str());
+
+	if(dataFile.is_open()){
+
+		//print headers
+		dataFile << "\nIteration\tx_n\tError_n\n";
+		
+		//Iterate over each n value
+		for(int n = 0; n < results.at(0).size(); n++){
+			
+			//print iteration number
+			dataFile << n << "\t";
+			
+			//Iterate over columns
+			for(int j = 0; j < results.size(); j++){
+
+				dataFile << setprecision(15) << scientific << results.at(j).at(n) << "\t";
+
+			}
+
+			//newline
+			dataFile << endl;
+
+		}
+	}
+}
+
+/*
+* Function to calculate f(x)
+*/
+double f(double x){
+
+	return (x*x*x) + (7.0f*x*x) - (6.0f*x) + 15.0f;
+}
+
+/*
+* Function to calculate f'(x)
+*/
+double fprime(double x){
+
+	return (3.0f*x*x)+(14.0f*x)-6.0f;
+}
+
+/*
+* Function to calculate f''(x)
+*/
+double f2prime(double x){
+	return (6.0f*x) - 14.0f;
+}
+
+
+//END HELPER FUNCTION IMPLEMENTATIONS

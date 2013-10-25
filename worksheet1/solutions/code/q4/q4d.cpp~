@@ -1,0 +1,266 @@
+/**
+* Solution to Question 4d of Worksheet 1
+* Program calculates a user-specified power N of the Silver Ratio,
+* by recursion to single and double floating point precision,
+* and outputs tabulated results to q4d.dat
+*
+* User should supply desired power of Silver Ratio as a command line argument
+* when executing the program. Eg) > ./q4d.o 6
+* 
+* Name:		Samuel Delacruz
+* ID:		1090154
+* Email:	SJD054@bham.ac.uk
+* Date:		18-10-2013
+**/
+
+#include <iostream>
+#include <fstream>
+#include <math.h>
+#include <vector>
+#include <iomanip>
+#include <string>
+using namespace std;
+
+//Function declarations
+vector<double> multiplySilver(int);
+void printResults(vector<double>&);
+void resultsToFile(vector<double>&, string);
+vector<double> multiplySilver(int);
+vector<double> singleSilver(int);
+vector<double> doubleSilver(int);
+void printMultiple(vector< vector<double> >&);
+vector<double> doubleError(vector<double>&, vector<double>&);
+void fileMultiple(vector< vector<double> >&, string);
+
+//Define Silver Ratio as a constant
+const double THI = ((-1.0f)+sqrt(5.0f))*0.5f;
+const float THI_FLT = ((-1.0f)+sqrt(5.0f))*0.5f;
+
+//filename for data output
+const string filename ("q4d.dat");
+
+int main(int argc, char *argv[]){
+
+		
+	
+	//Check that user has supplied a power argument
+	if(argc < 2){
+		//inform the user of correct usage
+		cout << "Correct usage: " << argv[0] << " N" << endl;
+		return -1;
+	}
+	
+	//Parse user input as integer
+	int N = atoi(argv[1]);
+	//check for positive N
+	if(N < 0){
+	
+		cout << "Error: Positive N only" << endl;
+		return -1;
+	}
+	
+	//Calculate our set of results
+	vector<vector<double> > allResults(5);
+	allResults.at(0) = multiplySilver(N);
+	allResults.at(1) = singleSilver(N);
+	allResults.at(2) = doubleError(allResults.at(1),allResults.at(0));
+	allResults.at(3) = doubleSilver(N);
+	allResults.at(4) = doubleError(allResults.at(3),allResults.at(0));
+
+	printMultiple(allResults);
+	fileMultiple(allResults,filename);
+	//sultsToFile(results,filename);
+	return 0;
+
+}
+
+/*
+* Function to calculate error between two sets of results
+*/
+vector<double> doubleError(vector<double>& results, vector<double>& reference){
+	
+	vector<double> errors(results.size());
+
+	for(int i = 0; i < errors.size(); i++){
+
+		errors.at(i) = reference.at(i) - results.at(i);
+		
+
+	}
+
+	
+	return errors;
+}
+
+/*
+* Function to return a set of results after calculating
+* The nth power of the Silver Ratio, by direct multiplication
+*/
+vector<double> multiplySilver(int n){
+
+	//need size n+1 for n = {1..100}
+	vector<double> results(n+1);
+	
+	for(int i=0; i < results.size(); i++){
+
+		results.at(i) = pow(THI,(double)i);
+
+	}
+
+	return results;
+
+}
+
+/*
+* Function to return a set of results in single
+* floating point precision, calculating Silver Ratio
+*/
+vector<double> singleSilver(int n){
+	
+	vector<double> results(n+1);
+	
+	results.at(0) = 1.0f;
+	results.at(1) = THI_FLT;
+
+	for(int i = 2; i < results.size(); i++){
+
+		float temp = results.at(i-2) - results.at(i-1);
+		results.at(i) = temp;
+
+	}
+
+
+	return results;
+
+}
+
+/*
+* Function to return a set of results in single
+* floating point precision, calculating Silver Ratio
+*/
+vector<double> doubleSilver(int n){
+	
+	vector<double> results(n+1);
+	
+	results.at(0) = 1.0f;
+	results.at(1) = THI;
+
+	for(int i = 2; i < results.size(); i++){
+
+		results.at(i) = results.at(i-2) - results.at(i-1);
+
+	}
+
+
+	return results;
+
+}
+
+
+/*
+* Function for printing multiple data sets, tabulated
+* Must use equal sized data sets
+*/
+void printMultiple(vector< vector<double> >& results){
+
+	//print headers
+	cout << "n\t\tDirect Mult\t\tSingle Prec\t\tSingle error\t\tDouble Prec\t\tDouble error\n";
+	
+	//Iterate over each n value, 1-100
+	for(int n = 1; n < results.at(0).size(); n++){
+		
+		//print value of n
+		cout << n << "\t";
+		
+		//Iterate over columns
+		for(int j = 0; j < results.size(); j++){
+
+			cout << setprecision(15) << scientific << results.at(j).at(n) << "\t";
+
+		}
+
+		//newline
+		cout << endl;
+
+	}
+
+}
+
+/*
+* Function for printing multiple data sets, tabulated
+* Must use equal sized data sets
+*/
+void fileMultiple(vector< vector<double> >& results, string fname){
+
+	ofstream dataFile(fname.c_str());
+
+	if(dataFile.is_open()){
+
+		//print headers
+		dataFile << "n\t\tDirect Mult\t\tSingle Prec\t\tSingle error\t\tDouble Prec\t\tDouble error\n";
+		
+		//Iterate over each n value, 1-100
+		for(int n = 1; n < results.at(0).size(); n++){
+			
+			//print value of n
+			dataFile << n << "\t";
+			
+			//Iterate over columns
+			for(int j = 0; j < results.size(); j++){
+
+				dataFile << setprecision(15) << scientific << results.at(j).at(n) << "\t";
+
+			}
+
+			//newline
+			dataFile << endl;
+
+		}
+	}
+
+}
+
+
+/*
+* Basic function for printing a set of results to terminal
+*/
+void printResults(vector<double>& results){
+	
+	cout << "n\tDirect\n";
+	for(int i = 1; i < results.size(); i++){
+
+		cout << i << "\t" << setprecision(15) << scientific << results.at(i) << endl;	
+
+	}
+
+}
+
+/*
+* Function to save our one column of results to file, of a given name
+*/
+void resultsToFile(vector<double>& results, string fname){
+
+	ofstream dataFile(fname.c_str());
+
+	if(dataFile.is_open()){
+		
+		dataFile << "n\tDirect\n";
+		
+		for(int i = 1; i < results.size(); i++){
+		
+			dataFile << i << "\t" << setprecision(15) << scientific << results.at(i) << endl;
+
+		}
+
+	dataFile.close();
+	
+	}
+
+	else {
+	
+		cout << "\nError writing to file\n";
+
+	}
+
+}
+

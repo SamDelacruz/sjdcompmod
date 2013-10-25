@@ -1,0 +1,191 @@
+/**
+* Solution to Question 6 of Worksheet 1
+* Program calculates theta to a precision determined by
+* the number of iterations entered by the user.
+*
+* User should supply number of iterations as a command line argument
+* when executing the program. Eg) > ./q7.o 100
+* 
+* Name:		Samuel Delacruz
+* ID:		1090154
+* Email:	SJD054@bham.ac.uk
+* Date:		18-10-2013
+**/
+#include <iostream>
+#include <fstream>
+#include <math.h>
+#include <vector>
+#include <iomanip>
+#include <string>
+
+using namespace std;
+
+//BEGIN FUNCTION DECLARATIONS
+double leftSide(double);
+double rightSide();
+void printMultiple(vector< vector<double> >&);
+vector<vector<double> > calculateResults(int);
+void fileMultiple(vector< vector<double> >&, string);
+//END FUNCTION DECLARATIONS
+
+//BEGIN CONSTANTS
+const double m = 5.5f;//Mass of object (kg)
+const double L = 0.6f;//Distance between springs (and double length of spring) (m)
+const double k = 850.0f;//Spring constant (N/m)
+const double g = 9.80665f;//Acceleration due to gravity on Earth (ms^-2)
+
+const double START_UPPER = M_PI*0.5f;//Starting upper bound value of theta to try
+const double START_LOWER = 0.0f;//Starting lower bound value of theta to try
+
+const string DATA_FILENAME = "q6.dat";
+//END CONSTANTS
+
+//BEGIN MAIN
+int main(int argc, char* argv[]){
+	
+	//BEGIN COMMAND LINE ARGUMENT CHECKING
+	if(argc < 2){
+		//inform the user of correct usage
+		cout << "Correct usage: " << argv[0] << " N" << endl;
+		return -1;
+	}
+	
+	//Parse user input as integer
+	int N = atoi(argv[1]);
+
+	//check for positive N
+	if(N < 0){
+	
+		cout << "Error: Positive N only" << endl;
+		return -1;
+	}
+	//END COMMAND LINE ARGUMENT CHECKING
+	
+	vector<vector<double> > results = calculateResults(N);
+	printMultiple(results);
+	fileMultiple(results, DATA_FILENAME);
+	return 0;
+
+}
+//END MAIN
+
+//BEGIN HELPER FUNCTION IMPLEMENTATIONS
+
+/*
+* Function to calculate table of results of theta
+* and corresponding uncertainty, given number of iterations to perform
+*/
+vector<vector<double> > calculateResults(int n){
+	//Set initial upper and lower bound values
+	double xt = START_UPPER;
+	double xb = START_LOWER;
+	
+	double mg = rightSide();
+	
+	//create data structures to hold values calculated
+	vector<double> thetas(n);
+	vector<double> uncertainties(n);
+	vector<vector<double> > table(2);
+	
+	for(int i = 0; i < n; i++){
+		
+		double xm = (xb + xt)*0.5f;
+		double uncert = xt - xb;
+		
+		
+		thetas.at(i) = xm;
+		uncertainties.at(i) = uncert;
+		
+		if((leftSide(xt) - mg)*(leftSide(xm)-mg) < 0.0f){
+			xb = xm;
+		}
+		
+		else{
+			xt = xm;
+		}
+		
+		
+	}
+	
+	table.at(0) = thetas;
+	table.at(1) = uncertainties;
+	
+	return table;
+}
+
+/*
+* Function for printing multiple data sets, tabulated
+* Must use equal sized data sets
+*/
+void printMultiple(vector< vector<double> >& results){
+
+	//print headers
+	cout << "\nIteration\tTheta\tUncertainty\n";
+	
+	//Iterate over each n value
+	for(int n = 0; n < results.at(0).size(); n++){
+		
+		//print iteration number
+		cout << n+1 << "\t";
+		
+		//Iterate over columns
+		for(int j = 0; j < results.size(); j++){
+
+			cout << setprecision(15) << scientific << results.at(j).at(n) << "\t";
+
+		}
+
+		//newline
+		cout << endl;
+
+	}
+}
+
+/*
+* Function for printing multiple data sets, tabulated
+* Must use equal sized data sets
+*/
+void fileMultiple(vector< vector<double> >& results, string fname){
+
+	ofstream dataFile(fname.c_str());
+
+	if(dataFile.is_open()){
+
+		//print headers
+		dataFile << "\nIteration\tTheta\tUncertainty\n";
+		
+		//Iterate over each n value
+		for(int n = 0; n < results.at(0).size(); n++){
+			
+			//print iteration number
+			dataFile << n+1 << "\t";
+			
+			//Iterate over columns
+			for(int j = 0; j < results.size(); j++){
+
+				dataFile << setprecision(15) << scientific << results.at(j).at(n) << "\t";
+
+			}
+
+			//newline
+			dataFile << endl;
+
+		}
+	}
+}
+
+/*
+* Function to calculate "left side" of equation, given theta
+*/
+double leftSide(double theta){
+
+	return k*L*(tan(theta)-sin(theta));
+}
+
+/*
+* Function to calculate "right side" of equation
+*/
+double rightSide(){
+	return m*g;
+}
+//END HELPER FUNCTION IMPLEMENTATIONS
