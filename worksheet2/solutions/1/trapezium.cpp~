@@ -3,21 +3,22 @@
 #include <math.h>
 #include <vector>
 #include <iomanip>
+#include <string>
 
 using namespace std;
 
 double f(double);
 double trapezium(double,double,int);
 vector<vector<double> > getResults(int,int,double,double,double);
-//void resultsToFile(vector<vector<double> >*);
-void resultsToScreen(vector<vector<double> >*);
+void resultsToFile(vector<vector<double> >&,string);
+void resultsToScreen(vector<vector<double> >&);
 
 int main(int argc, char* argv[]){
 	
 	//BEGIN COMMAND LINE ARGUMENT CHECKING
-	if(argc < 6){
+	if(argc < 7){
 		//inform the user of correct usage
-		cout << "Correct usage: " << argv[0] << " n_min n_max x_min x_max expected_value" << endl;
+		cout << "Correct usage: " << argv[0] << " n_min n_max x_min x_max expected_value output_file_name" << endl;
 		return -1;
 	}
 	
@@ -27,7 +28,7 @@ int main(int argc, char* argv[]){
 	double x_min = atof(argv[3]);
 	double x_max = atof(argv[4]);
 	double expected = atof(argv[5]);
-	
+	string filename = argv[6];
 	//check for positive N
 	if(n_min < 0 || n_max < 0){
 	
@@ -36,25 +37,22 @@ int main(int argc, char* argv[]){
 	}
 	//END COMMAND LINE ARGUMENT CHECKING
 	
-	vector <vector<double> > results = getResults(n_min,n_max,x_max,x_min,expected);
+	vector<vector<double> > results = getResults(n_min,n_max,x_max,x_min,expected);
 	
 	resultsToScreen(results);
-	//resultsToFile(results);
+	resultsToFile(results,filename);
 	
 	return 0;
 
 }
 
-void resultsToScreen(vector< vector<double> >& results){
+void resultsToScreen(vector<vector<double> >& results){
 
 	//print headers
 	cout << "\nh\tResult\tError\n";
 	
 	//Iterate over each n value
 	for(int n = 0; n < results.at(0).size(); n++){
-		
-		//print iteration number
-		cout << n+1 << "\t";
 		
 		//Iterate over columns
 		for(int j = 0; j < results.size(); j++){
@@ -69,17 +67,43 @@ void resultsToScreen(vector< vector<double> >& results){
 	}
 }
 
-vector < vector <double> > getResults(int n_min, int n_max, double x_n, double x_0, double expected){
+void resultsToFile(vector<vector<double> >& results, string fname){
+
+	ofstream dataFile(fname.c_str());
+
+	if(dataFile.is_open()){
+
+		//print headers
+		dataFile << "h\t"<< "Result\t" << "Error\n";
+		
+		//Iterate over each n value
+		for(int n = 0; n < results.at(0).size(); n++){
+			
+			//Iterate over columns
+			for(int j = 0; j < results.size(); j++){
+
+				dataFile << setprecision(15) << scientific << results.at(j).at(n) << "\t";
+
+			}
+
+			//newline
+			dataFile << endl;
+
+		}
+	}
+}
+
+vector<vector<double> > getResults(int n_min, int n_max, double x_n, double x_0, double expected){
 
 	vector<double> hs(n_max - n_min + 1);
 	vector<double> is(hs.size());
-	vector<double> errors(hs.size);
+	vector<double> errors(hs.size());
 	
-	for(int n = n_min; n < n_max + 1; n++){
-	
-		hs.at(n) = (x_n - x_0) / (double)n;
-		is.at(n) = trapezium(x_n,x_0,n);
-		errors.at(n) = expected - is.at(n);
+	for(int i = 0; i < hs.size(); i++){
+		int n = i + n_min;
+		hs.at(i) = (x_n - x_0) / (double)n;
+		is.at(i) = trapezium(x_n,x_0,n);
+		errors.at(i) = expected - is.at(i);
 	
 	}
 	
@@ -104,7 +128,7 @@ double trapezium (double x_n, double x_0, int n){
 	
 	}
 	
-	result = h*(2.0f*f(x_0) + 2.0f*f(x_n) + result);
+	result = 0.5*h*(f(x_0) + f(x_n) + 2.0f*result);
 	
 	return result;
 
@@ -112,6 +136,6 @@ double trapezium (double x_n, double x_0, int n){
 
 double f(double x){
 
-	return pow(1.0f+x,2.0f);
+	return pow(1.0f+x,-2.0f);
 	
 }
