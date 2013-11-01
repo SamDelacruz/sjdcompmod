@@ -1,0 +1,197 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2013.11.1)  1 NOV 2013 13:07
+entering extended mode
+**UoBnoteexample.tex
+(U:\sjdcompmod\worksheet2\report\UoBnoteexample.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, german, ngerman, german-x-2009-06-19, ngerm
+an-x-2009-06-19, french, loaded.
+(U:\sjdcompmod\worksheet2\report\UoBnote.cls
+
+LaTeX Warning: You have requested document class `UoBnote',
+               but the document class provides `standard-doc'.
+
+Document Class: standard-doc 2001/03/03 UoBnote class
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\fancyhdr\fancyhdr.sty"
+\fancy@headwidth=\skip41
+\f@ncyO@elh=\skip42
+\f@ncyO@erh=\skip43
+\f@ncyO@olh=\skip44
+\f@ncyO@orh=\skip45
+\f@ncyO@elf=\skip46
+\f@ncyO@erf=\skip47
+\f@ncyO@olf=\skip48
+\f@ncyO@orf=\skip49
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\lastpage\lastpage.sty"
+Package: lastpage 1994/06/25 v0.1b LaTeX2e package for refs to last page number (JPG)
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2010/02/14 v0.04n Graphics/color for pdfTeX
+\Gread@gobject=\count79
+))
+\Gin@req@height=\dimen102
+\Gin@req@width=\dimen103
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\article.cls"
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\size10.clo"
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip50
+\belowcaptionskip=\skip51
+\bibindent=\dimen104
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\color.sty"
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+) note completed OK)
+
+LaTeX Warning: Unused global option(s):
+    [pdf].
+
+No file UoBnoteexample.aux.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+("C:\Program Files (x86)\MiKTeX 2.8\tex\context\base\supp-pdf.tex"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count88
+\scratchdimen=\dimen105
+\scratchbox=\box26
+\nofMPsegments=\count89
+\nofMParguments=\count90
+\everyMPshowfont=\toks15
+\MPscratchCnt=\count91
+\MPscratchDim=\dimen106
+\MPnumerator=\count92
+\everyMPtoPDFconversion=\toks16
+) <bhamlogo.pdf, id=1, 756.73315pt x 323.16734pt>
+File: bhamlogo.pdf Graphic file (type pdf)
+ <use bhamlogo.pdf>
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 12.
+ [1
+
+{C:/ProgramData/MiKTeX/2.8/pdftex/config/pdftex.map} <U:/sjdcompmod/worksheet2/report/bhamlogo.pdf>]
+No file UoBnoteexample.toc.
+\tf@toc=\write3
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 21.
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 21.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 27.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 27.
+
+
+LaTeX Warning: Reference `eq:newton' on page 1 undefined on input line 41.
+
+
+LaTeX Warning: Reference `se:environments' on page 1 undefined on input line 41.
+
+
+LaTeX Warning: Reference `fig:figure1' on page 1 undefined on input line 61.
+
+
+LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 78.
+
+[1]
+
+LaTeX Warning: File `beams.pdf' not found on input line 87.
+
+
+! Package pdftex.def Error: File `beams.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.87 \includegraphics[scale=0.75]{beams.pdf}
+                                            
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+AED: lastpage setting LastPage
+
+LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 93.
+
+[2] (U:\sjdcompmod\worksheet2\report\UoBnoteexample.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 1156 strings out of 495285
+ 14809 string characters out of 3179875
+ 67669 words of memory out of 3000000
+ 4377 multiletter control sequences out of 15000+200000
+ 10648 words of font info for 37 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 33i,11n,45p,380b,313s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/
+type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/publ
+ic/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files 
+(x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts
+/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 
+2.8/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr9.pfb><
+C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/typ
+e1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program
+ Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/
+amsfonts/cm/cmti8.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on UoBnoteexample.pdf (3 pages, 914081 bytes).
+PDF statistics:
+ 85 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+
