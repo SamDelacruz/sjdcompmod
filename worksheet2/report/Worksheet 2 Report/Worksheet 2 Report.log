@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2013.11.1)  1 NOV 2013 15:47
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2013.11.1)  1 NOV 2013 16:00
 entering extended mode
 **Worksheet*2*Report.tex
 ("U:\sjdcompmod\worksheet2\report\Worksheet 2 Report\Worksheet 2 Report.tex"
@@ -152,11 +152,11 @@ LaTeX Font Info:    ... okay on input line 12.
 File: bhamlogo.pdf Graphic file (type pdf)
  <use bhamlogo.pdf>
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 14.
+(Font)              <12> on input line 31.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 14.
+(Font)              <8> on input line 31.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 14.
+(Font)              <6> on input line 31.
  [1
 
 {C:/ProgramData/MiKTeX/2.8/pdftex/config/pdftex.map} <U:/sjdcompmod/worksheet2/report/Worksheet 2 Report/bhamlogo.pdf>]
@@ -174,7 +174,7 @@ Package epstopdf Info: Source file: <figures/q2b.eps>
 (epstopdf)                    date: 2013-11-01 15:36:34
 (epstopdf)                    size: 3707 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/q2b-eps-converted-to.pdf figures/q2b.eps>
-(epstopdf)             \includegraphics on input line 55.
+(epstopdf)             \includegraphics on input line 72.
 Package epstopdf Info: Output file is already uptodate.
 
 <figures/q2b-eps-converted-to.pdf, id=15, 361.35pt x 252.945pt>
@@ -187,7 +187,7 @@ Package epstopdf Info: Source file: <figures/q2-f2x-trap.eps>
 (epstopdf)                    date: 2013-11-01 15:41:26
 (epstopdf)                    size: 3644 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/q2-f2x-trap-eps-converted-to.pdf figures/q2-f2x-trap.eps>
-(epstopdf)             \includegraphics on input line 63.
+(epstopdf)             \includegraphics on input line 80.
 Package epstopdf Info: Output file is already uptodate.
 
 <figures/q2-f2x-trap-eps-converted-to.pdf, id=16, 361.35pt x 252.945pt>
@@ -201,24 +201,20 @@ Package epstopdf Info: Source file: <figures/q2-f4x-simps.eps>
 (epstopdf)                    date: 2013-11-01 15:43:26
 (epstopdf)                    size: 3677 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/q2-f4x-simps-eps-converted-to.pdf figures/q2-f4x-simps.eps>
-(epstopdf)             \includegraphics on input line 91.
+(epstopdf)             \includegraphics on input line 108.
 Package epstopdf Info: Output file is already uptodate.
  <figures/q2-f4x-simps-eps-converted-to.pdf, id=32, 361.35pt x 252.945pt>
 File: figures/q2-f4x-simps-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/q2-f4x-simps-eps-converted-to.pdf>
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
 
  []
 
 [2 <U:/sjdcompmod/worksheet2/report/Worksheet 2 Report/figures/q2b-eps-converted-to.pdf>]
 AED: lastpage setting LastPage [3 <U:/sjdcompmod/worksheet2/report/Worksheet 2 Report/figures/q2-f2x-trap-eps-converted-
 to.pdf>] [4 <U:/sjdcompmod/worksheet2/report/Worksheet 2 Report/figures/q2-f4x-simps-eps-converted-to.pdf>]
-("U:\sjdcompmod\worksheet2\report\Worksheet 2 Report\Worksheet 2 Report.aux")
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+("U:\sjdcompmod\worksheet2\report\Worksheet 2 Report\Worksheet 2 Report.aux") ) 
 Here is how much of TeX's memory you used:
  1550 strings out of 495285
  22449 string characters out of 3179875
@@ -227,18 +223,19 @@ Here is how much of TeX's memory you used:
  9552 words of font info for 33 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  41i,11n,45p,296b,340s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/
-type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Pro
-gram Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/pub
-lic/amsfonts/cm/cmmi5.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files 
-(x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts
-/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files (x86)/MiKTeX 
-2.8/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr8.pfb><
-C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1
-/public/amsfonts/cm/cmsl10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program 
-Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/am
-sfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on "Worksheet 2 Report.pdf" (5 pages, 938734 bytes).
+<C:/Program Files (x86)/MiKTeX 2.8/fonts/
+type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/pub
+lic/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files
+ (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfont
+s/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTe
+X 2.8/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr7.pfb
+><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/typ
+e1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program 
+Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/a
+msfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86
+)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmti8.pfb>
+Output written on "Worksheet 2 Report.pdf" (5 pages, 938739 bytes).
 PDF statistics:
  103 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
