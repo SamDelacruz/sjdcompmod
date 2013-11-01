@@ -25,7 +25,7 @@
 			and using their area to approximate the integral of $f(x)$. As $h \rightarrow 0$, the estimated value converges to the exact integral value. The trapezium rule is given as follows:
 			
 			\begin{equation} \label{eq:trapezium}
-				\int\limits_{x_0}^{x_n} f(x) dx \simeq \frac{1}{2}h\left[f(x_0) + f(x_n) + 2(f(x_1) + f(x_2) +...+ f(x_(n-1)))\right]
+				\int\limits_{x_0}^{x_n} f(x) dx \approx \frac{1}{2}h\left[f(x_0) + f(x_n) + 2(f(x_1) + f(x_2) +...+ f(x_{n-1}))\right]
 			\end{equation}
 			
 			Where $h$, the width of the interval is defined by:
@@ -35,7 +35,7 @@
 			\end{equation}
 			
 			Due to the nature of the trapezium rule, there is naturally an error associated with values calculated using it.
-			There exists an analytic expression for this error and is given by the following equation \cite{errors_web}:
+			There exists an analytic expression for this error and is given by the following equation $^{\cite{errors_web}}$:
 			
 			
 			\begin{equation} \label{eq:trap_err}
@@ -50,14 +50,28 @@
 			
 		\subsection{Simpson's Rule}
 			\subsubsection{Theory}
-				Simpson's rule is another method of computing the value of integrals. 
-
+				Simpson's rule is another method of computing the value of integrals. Instead of splitting $f(x)$ into straight-line segments as in the trapezium rule, the function is split into a
+				series of parabolic segments. This results in a higher level of precision than the trapezium rule, and will be demonstrated in the procedure to follow. The equation for Simpson's rule is given as follows $^{\cite{errors_web}}$:
+				
+				\begin{equation} \label{simpsons}
+					\int\limits_a^b f(x) dx \approx \frac{h}{3}\left[f(x_0) + 4f(x_1) + 2f(x_2) + 4f(x_3) + 2f(x_4) + ... + 2f(x_{n-2}) + 4f(x_{n-1}) +f(x_n)\right]
+				\end{equation}
+				
+				Which may also be written as $^{\cite{simps_wiki}}$:
+				
+				
+				\begin{equation} \label{simpsons_sum}
+					\int\limits_a^b f(x) dx \approx \frac{h}{3}\left[f(x_0) + 2 \sum\limits_{j=1}^{(n/2)-1} \left(f(x_{2j})\right) + 4 \sum\limits_{j=1}^{n/2} \left(f(x_{2j-1})\right) + f(x_n) \right]
+				\end{equation}
+				
+				
 \section{Numerical Integration with GSL}
 
 \section{Appendices}
 
 \begin{thebibliography}{breitestes Label}
-	\bibitem{errors_web} Kendall E. Atkinson\\{\em http://homepage.math.uiowa.edu/\textasciitilde{}atkinson/ftp/ENA\_Materials/Overheads/sec\_5-2.pdf}\\Accessed at 11-2013
+	\bibitem{errors_web} Kendall E. Atkinson\\{\em http://homepage.math.uiowa.edu/\textasciitilde{}atkinson/ftp/ENA\_Materials/Overheads/sec\_5-2.pdf}\\Accessed at 01-11-2013\\
+	\bibitem{simps_wiki} Wikipedia.org\\{\em http://en.wikipedia.org/wiki/Simpson's\_rule\#Composite\_Simpson.27s\_rule}\\Accessed at 01-11-2013
 \end{thebibliography}
 
 \end{document}
