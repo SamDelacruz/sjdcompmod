@@ -1,5 +1,5 @@
 \documentclass[pdf,color]{UoBnote}
-
+\usepackage{epstopdf}
 \author{Samuel Delacruz\\
 				sjd054@bham.ac.uk\\
 				1090154}
@@ -48,6 +48,25 @@
 				\left|E_n^T\right| \leq \frac{h^2\left(b-a\right)}{12}\max_{a \leq x \leq b}\left|f''(x)\right|
 			\end{equation}
 			
+			\subsubsection{Procedure}
+				
+				\begin{figure}[tb]
+					\centering
+						\includegraphics{figures/q2b.eps}
+					\caption{Plot of $f(x)$ in the range $[0:\pi]$}
+					\label{fig:q2b}
+				\end{figure}
+				
+				
+				\begin{figure}[tb]
+					\centering
+						\includegraphics{figures/q2-f2x-trap.eps}
+					\caption{Plot of $f''(x)$ in the range $[0:2]$}
+					\label{fig:q2-f2x-trap}
+				\end{figure}
+				
+				
+			
 		\subsection{Simpson's Rule}
 			\subsubsection{Theory}
 				Simpson's rule is another method of computing the value of integrals. Instead of splitting $f(x)$ into straight-line segments as in the trapezium rule, the function is split into a
@@ -63,6 +82,16 @@
 				\begin{equation} \label{simpsons_sum}
 					\int\limits_a^b f(x) dx \approx \frac{h}{3}\left[f(x_0) + 2 \sum\limits_{j=1}^{(n/2)-1} \left(f(x_{2j})\right) + 4 \sum\limits_{j=1}^{n/2} \left(f(x_{2j-1})\right) + f(x_n) \right]
 				\end{equation}
+				Where $h$ is given in equation (\ref{eq:h_def})
+				
+			\subsubsection{Procedure}
+				
+				\begin{figure}[tb]
+					\centering
+						\includegraphics{figures/q2-f4x-simps.eps}
+					\caption{Plot of $f^{\left(4\right)}(x)$ in the range $[0:2]$}
+					\label{fig:q2-f4x-simps}
+				\end{figure}
 				
 				
 \section{Numerical Integration with GSL}

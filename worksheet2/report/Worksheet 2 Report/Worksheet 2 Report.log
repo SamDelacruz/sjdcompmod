@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2013.11.1)  1 NOV 2013 15:17
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2013.11.1)  1 NOV 2013 15:47
 entering extended mode
 **Worksheet*2*Report.tex
 ("U:\sjdcompmod\worksheet2\report\Worksheet 2 Report\Worksheet 2 Report.tex"
@@ -75,6 +75,49 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 ) note completed OK)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\oberdiek\epstopdf.sty"
+Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2007/09/30 v1.0 Managing graphics extensions (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2010/02/22 v3.7 Keyval support for LaTeX options (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2010/03/01 v1.9 Key value parser (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2010/01/28 v1.3 Prefix for e-TeX command names (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2010/04/01 v0.9 Utility functions of pdfTeX for LuaTeX (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2010/04/26 v1.7 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 436.
+))
 
 LaTeX Warning: Unused global option(s):
     [pdf].
@@ -124,35 +167,80 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 3.
 )
 \tf@toc=\write3
- [1]
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
+Package epstopdf Info: Source file: <figures/q2b.eps>
+(epstopdf)                    date: 2013-10-31 22:16:26
+(epstopdf)                    size: 18130 bytes
+(epstopdf)             Output file: <figures/q2b-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-11-01 15:36:34
+(epstopdf)                    size: 3707 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/q2b-eps-converted-to.pdf figures/q2b.eps>
+(epstopdf)             \includegraphics on input line 55.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/q2b-eps-converted-to.pdf, id=15, 361.35pt x 252.945pt>
+File: figures/q2b-eps-converted-to.pdf Graphic file (type pdf)
+ <use figures/q2b-eps-converted-to.pdf>
+Package epstopdf Info: Source file: <figures/q2-f2x-trap.eps>
+(epstopdf)                    date: 2013-10-31 22:22:56
+(epstopdf)                    size: 17763 bytes
+(epstopdf)             Output file: <figures/q2-f2x-trap-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-11-01 15:41:26
+(epstopdf)                    size: 3644 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/q2-f2x-trap-eps-converted-to.pdf figures/q2-f2x-trap.eps>
+(epstopdf)             \includegraphics on input line 63.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/q2-f2x-trap-eps-converted-to.pdf, id=16, 361.35pt x 252.945pt>
+File: figures/q2-f2x-trap-eps-converted-to.pdf Graphic file (type pdf)
+ <use figures/q2-f2x-trap-eps-converted-to.pdf>
+[1]
+Package epstopdf Info: Source file: <figures/q2-f4x-simps.eps>
+(epstopdf)                    date: 2013-10-31 22:25:22
+(epstopdf)                    size: 17934 bytes
+(epstopdf)             Output file: <figures/q2-f4x-simps-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-11-01 15:43:26
+(epstopdf)                    size: 3677 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/q2-f4x-simps-eps-converted-to.pdf figures/q2-f4x-simps.eps>
+(epstopdf)             \includegraphics on input line 91.
+Package epstopdf Info: Output file is already uptodate.
+ <figures/q2-f4x-simps-eps-converted-to.pdf, id=32, 361.35pt x 252.945pt>
+File: figures/q2-f4x-simps-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/q2-f4x-simps-eps-converted-to.pdf>
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
  []
 
-AED: lastpage setting LastPage [2] ("U:\sjdcompmod\worksheet2\report\Worksheet 2 Report\Worksheet 2 Report.aux") ) 
+[2 <U:/sjdcompmod/worksheet2/report/Worksheet 2 Report/figures/q2b-eps-converted-to.pdf>]
+AED: lastpage setting LastPage [3 <U:/sjdcompmod/worksheet2/report/Worksheet 2 Report/figures/q2-f2x-trap-eps-converted-
+to.pdf>] [4 <U:/sjdcompmod/worksheet2/report/Worksheet 2 Report/figures/q2-f4x-simps-eps-converted-to.pdf>]
+("U:\sjdcompmod\worksheet2\report\Worksheet 2 Report\Worksheet 2 Report.aux")
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 1139 strings out of 495285
- 14955 string characters out of 3179875
- 66809 words of memory out of 3000000
- 4364 multiletter control sequences out of 15000+200000
+ 1550 strings out of 495285
+ 22449 string characters out of 3179875
+ 75933 words of memory out of 3000000
+ 4737 multiletter control sequences out of 15000+200000
  9552 words of font info for 33 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 32i,12n,45p,269b,273s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Pr
-ogram Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/pu
-blic/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Fil
-es (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsf
-onts/cm/cmmi5.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files (x86)/Mi
-KTeX 2.8/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr1
-2.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files (x86)/MiKTeX 2.8/font
-s/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Progr
-am Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/
-amsfonts/cm/cmsl10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x
-86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/c
-m/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on "Worksheet 2 Report.pdf" (3 pages, 926626 bytes).
+ 41i,11n,45p,296b,340s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/
+type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/pub
+lic/amsfonts/cm/cmmi5.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files 
+(x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts
+/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files (x86)/MiKTeX 
+2.8/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr8.pfb><
+C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1
+/public/amsfonts/cm/cmsl10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program 
+Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/am
+sfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmti8.pfb>
+Output written on "Worksheet 2 Report.pdf" (5 pages, 938734 bytes).
 PDF statistics:
- 85 PDF objects out of 1000 (max. 8388607)
+ 103 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
