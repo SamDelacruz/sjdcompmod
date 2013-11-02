@@ -1,5 +1,5 @@
 /**
-* Solution to Question 2 c of Worksheet 2
+* Solution to Question 2 f of Worksheet 2
 * Program suses the trapezium rule to evaluate the integral given in q2c.
 * Data is output to file (name defined in command line arguments).
 * 
@@ -27,6 +27,7 @@ void resultsToScreen(vector<vector<double> >&);
 
 double f(double);
 double trapezium(double,double,int);
+double simpson(double,double,int);
 vector<vector<double> > getResults(int,int,double,double,double);
 
 //CONSTANTS

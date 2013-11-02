@@ -117,7 +117,7 @@ double trapezium (double x_n, double x_0, int n){
 	
 	double result = 0.0f;
 	
-	for(int i = 1; i < n-1; i++){
+	for(int i = 1; i < n; i++){
 	
 		result += f(x_0+((double)i*h));
 	
