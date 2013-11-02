@@ -93,8 +93,8 @@ double d4f(double x){
 int get_n_max(int sf){
 	
 	//equation for number of n for given significant figures (see report)
-	//minima of d2f found at PI/4, using it as constant in error formula
-	return ceil(pow((pow((X_MAX - X_MIN), 5.0))/(180*(pow(10.0,1.0-(double)sf)))*abs(d2f(0.25*PI)),0.25));
+	//minima of d4f found at PI/4, using it as constant in error formula
+	return ceil(pow((pow((X_MAX - X_MIN), 5.0))/(180*(pow(10.0,1.0-(double)sf)))*abs(d4f(0.25*PI)),0.25));
 	
 
 }
