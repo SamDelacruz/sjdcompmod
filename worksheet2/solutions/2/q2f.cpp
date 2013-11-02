@@ -61,6 +61,7 @@ int main(int argc, char* argv[]){
 			<<	"sf = " << sf << endl
 			<<	"Expected value = "	<< expected << endl
 			<<	"Output file = "	<< filename << endl
+			<<	"n_max will be: "	<< get_n_max(sf) << endl;
 			<<	"Calculating results set..."	<< endl;
 			
 	vector<vector<double> > results = getResults(N_MIN,get_n_max(sf),X_MAX,X_MIN,expected);
@@ -94,7 +95,27 @@ int get_n_max(int sf){
 	
 	//equation for number of n for given significant figures (see report)
 	//minima of d4f found at PI/4, using it as constant in error formula
-	return (int)ceil(pow((pow((X_MAX - X_MIN), 5.0)*pow(10.0,1.0-(double)sf))/180*abs(d4f(0.25*PI)),0.25));
+	return (int) ceil(
+					pow(
+						(
+							pow(
+								(X_MAX - X_MIN),
+								5.0
+							)
+							*pow(
+								10.0,
+								1.0-(double)sf
+							)
+						)
+						/180
+						*abs(
+							d4f(
+								0.25
+								*PI
+							)
+						)
+						,0.25)
+					);
 	
 
 }
