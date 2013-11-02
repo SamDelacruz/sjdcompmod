@@ -40,7 +40,7 @@ const double PI = acos(-1.0f);
 int main(int argc, char* argv[]){
 	
 	//BEGIN COMMAND LINE ARGUMENT CHECKING
-	if(argc < 5){
+	if(argc < 4){
 		//inform the user of correct usage
 		cout << "Correct usage: " << argv[0] << " sf expected_value output_file_name" << endl;
 		return -1;
