@@ -94,7 +94,7 @@ vector<vector<double> > getResults(int n_min, int n_max, double x_n, double x_0,
 	vector<double> is(ns.size());
 	vector<double> errors(ns.size());
 	
-	for(int i = 0; i < hs.size(); i++){
+	for(int i = 0; i < ns.size(); i++){
 		int n = (int) pow((double)n_min,i+1);//want to start from n_min, not 1.
 		ns.at(i) = n;
 		is.at(i) = trapezium(x_n,x_0,n);
