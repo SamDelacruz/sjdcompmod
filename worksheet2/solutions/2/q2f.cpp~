@@ -61,6 +61,7 @@ int main(int argc, char* argv[]){
 			<<	"sf = " << sf << endl
 			<<	"Expected value = "	<< expected << endl
 			<<	"Output file = "	<< filename << endl
+			<<	"n_max will be: "	<< get_n_max(sf) << endl;
 			<<	"Calculating results set..."	<< endl;
 			
 	vector<vector<double> > results = getResults(N_MIN,get_n_max(sf),X_MAX,X_MIN,expected);
