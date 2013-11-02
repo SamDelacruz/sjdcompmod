@@ -29,10 +29,9 @@ double f(double);
 double trapezium(double,double,int);
 vector<vector<double> > getResults(int,int,double,double,double);
 
-//CONSTANTS
+//CONSTANTS (the integration limits of the problem)
 const double X_MIN = 0.0f;
 const double X_MAX = 2.0f;
-const double N_MIN = 2.0f;
 
 
 int main(int argc, char* argv[]){

@@ -3,9 +3,9 @@
 * Program suses the trapezium rule to evaluate the integral given in q2c.
 * Data is output to file (name defined in command line arguments).
 * 
-* User should supply minimum and maximum number of subintervals, 
+* User must supply desired number of significant figures to be correct to, 
 * expected value, and output file name in the following format:
-* Eg) > ./q2c.o 2 100000000 47.478863763554 q2c-01.dat
+* Eg) > ./q2c.o 8 47.478863763554 q2f-01.dat
 * 
 * Name:		Samuel Delacruz
 * ID:		1090154
@@ -26,51 +26,44 @@ void resultsToFile(vector<vector<double> >&,string);
 void resultsToScreen(vector<vector<double> >&);
 
 double f(double);
-double trapezium(double,double,int);
 double simpson(double,double,int);
+double d4f(double);
+int get_n_max(int);
 vector<vector<double> > getResults(int,int,double,double,double);
 
-//CONSTANTS
+//CONSTANTS (the integration limits of the problem)
 const double X_MIN = 0.0f;
 const double X_MAX = 2.0f;
-const double N_MIN = 2.0f;
-
+const int N_MIN = 2;//minimum number of segments to split f(x) into
+const double PI = acos(-1.0f);
 
 int main(int argc, char* argv[]){
 	
 	//BEGIN COMMAND LINE ARGUMENT CHECKING
 	if(argc < 5){
 		//inform the user of correct usage
-		cout << "Correct usage: " << argv[0] << " n_min n_max expected_value output_file_name" << endl;
+		cout << "Correct usage: " << argv[0] << " sf expected_value output_file_name" << endl;
 		return -1;
 	}
 	
 	//Parse user input
-	int n_min = atoi(argv[1]);
-	int n_max = atoi(argv[2]);
-	double expected = atof(argv[3]);
-	string filename = argv[4];
-	//check for positive N
-	if(n_min < 0 || n_max < 0){
-	
-		cout << "Error: Positive n only" << endl;
-		return -1;
-	}
-	//Check n_max > n_min
-	if( !(n_max > n_min) ){
-		cout << "Error: n_max must be larger than n_min" << endl;
+	int sf = atoi(argv[1]);
+	double expected = atof(argv[2]);
+	string filename = argv[3];
+	//check for positive sf value
+	if(sf < 0){
+		cout << "Error: Positive sf only" << endl;
 		return -1;
 	}
 	//END COMMAND LINE ARGUMENT CHECKING
 	
-	cout	<< 	"You entered: "
-			<<	"n_min = " << n_min << endl
-			<<	"n_max = " << n_max << endl
+	cout	<< 	"You entered:\n"
+			<<	"sf = " << sf << endl
 			<<	"Expected value = "	<< expected << endl
 			<<	"Output file = "	<< filename << endl
 			<<	"Calculating results set..."	<< endl;
 			
-	vector<vector<double> > results = getResults(n_min,n_max,X_MAX,X_MIN,expected);
+	vector<vector<double> > results = getResults(N_MIN,get_n_max(sf),X_MAX,X_MIN,expected);
 	
 	cout	<<	"Printing results to terminal...\n\n";
 	resultsToScreen(results);
@@ -88,6 +81,24 @@ double f(double x){
 
 }
 
+/**
+* Function for calculating value of 4th derivative of f(x)
+**/
+double d4f(double x){
+
+	return (-4.0*exp(-x)*sin(x));
+
+}
+
+int get_n_max(int sf){
+	
+	//equation for number of n for given significant figures (see report)
+	//minima of d2f found at PI/4, using it as constant in error formula
+	return ceil(pow((pow((X_MAX - X_MIN), 5.0))/(180*(pow(10.0,1.0-(double)sf)))*abs(d2f(0.25*PI)),0.25));
+	
+
+}
+
 vector<vector<double> > getResults(int n_min, int n_max, double x_n, double x_0, double expected){
 	
 	//We will be raising n logarithmically, so size vector appropriately
@@ -98,7 +109,7 @@ vector<vector<double> > getResults(int n_min, int n_max, double x_n, double x_0,
 	for(int i = 0; i < ns.size(); i++){
 		int n = (int) pow((double)n_min,i+1);//want to start from n_min, not 1.
 		ns.at(i) = n;
-		is.at(i) = trapezium(x_n,x_0,n);
+		is.at(i) = simpson(x_n,x_0,n);
 		errors.at(i) = abs(expected - is.at(i));
 	
 	}
@@ -112,23 +123,30 @@ vector<vector<double> > getResults(int n_min, int n_max, double x_n, double x_0,
 	return toret;
 }
 
-double trapezium (double x_n, double x_0, int n){
+double simpson (double x_n, double x_0, int n){
 
 	double h = (x_n - x_0) / (double)n;
 	
-	double result = 0.0f;
+	double sum = f(x_0);
 	
-	for(int i = 1; i < n-1; i++){
-	
-		result += f(x_0+((double)i*h));
-	
+	for(int i = 1; i < n; i++){
+		//check for even i
+		if(i%2==0){
+			sum += 2.0f * f(x_0 + ( (double)i * h) );
+		}
+		//otherwise odd i
+		else{
+			sum += 4.0f * f(x_0 + ( (double)i * h) );
+		}
+
 	}
 	
-	result = 0.5*h*(f(x_0) + f(x_n) + 2.0f*result);
+	sum += f(x_n);
 	
-	return result;
+	return sum * (h/3);
 
 }
+
 
 void resultsToScreen(vector<vector<double> >& results){
 

@@ -32,7 +32,6 @@ vector<vector<double> > getResults(int,int,double,double,double);
 //CONSTANTS
 const double X_MIN = 0.0f;
 const double X_MAX = 2.0f;
-const double N_MIN = 2.0f;
 
 
 int main(int argc, char* argv[]){
@@ -117,7 +116,7 @@ double trapezium (double x_n, double x_0, int n){
 	
 	double result = 0.0f;
 	
-	for(int i = 1; i < n-1; i++){
+	for(int i = 1; i < n; i++){
 	
 		result += f(x_0+((double)i*h));
 	
