@@ -47,8 +47,8 @@ int main(int argc, char* argv[]){
 	//Parse user input
 	int n_min = atoi(argv[1]);
 	int n_max = atoi(argv[2]);
-	double expected = atof(argv[5]);
-	string filename = argv[6];
+	double expected = atof(argv[3]);
+	string filename = argv[4];
 	//check for positive N
 	if(n_min < 0 || n_max < 0){
 	
