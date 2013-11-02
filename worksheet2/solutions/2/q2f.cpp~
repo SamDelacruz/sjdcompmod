@@ -104,7 +104,7 @@ int get_n_max(int sf){
 							)
 							*pow(
 								10.0,
-								1.0-(double)sf
+								(double)sf - 1.0f
 							)
 						)
 						/180
