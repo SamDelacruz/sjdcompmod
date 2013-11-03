@@ -1,11 +1,11 @@
 /**
 * Solution to Question 2 f of Worksheet 2
-* Program suses the trapezium rule to evaluate the integral given in q2c.
+* Program uses Simpson's Rule to evaluate the integral given in q2c.
 * Data is output to file (name defined in command line arguments).
 * 
 * User must supply desired number of significant figures to be correct to, 
 * expected value, and output file name in the following format:
-* Eg) > ./q2c.o 8 47.478863763554 q2f-01.dat
+* Eg) > ./q2f.o 8 47.478863763554 q2f-01.dat
 * 
 * Name:		Samuel Delacruz
 * ID:		1090154

@@ -1,6 +1,6 @@
 /**
 * Solution to Question 2 f of Worksheet 2
-* Program suses the trapezium rule to evaluate the integral given in q2c.
+* Program uses Simpson's Rule to evaluate the integral given in q2c.
 * Data is output to file (name defined in command line arguments).
 * 
 * User must supply desired number of significant figures to be correct to, 
@@ -114,8 +114,9 @@ int get_n_max(int sf){
 								*PI
 							)
 						)
-						,0.25)
-					);
+						,0.25
+					)
+				);
 	
 
 }
