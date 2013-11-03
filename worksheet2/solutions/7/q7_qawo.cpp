@@ -64,8 +64,8 @@ int main(int argc, char* argv[]){
 	
 	//Perform integration routine
 	gsl_integration_qawo (	&F, lower_lim, abs_error,
-							rel_error, 1000, &w,
-							&t, &result, &error);
+							rel_error, 1000, w,
+							t, &result, &error);
 	
 	cout.setf (ios::fixed, ios::floatfield);	// output in fixed format
   	cout.precision (18);		// 18 digits in doubles
