@@ -66,6 +66,8 @@ int main(int argc, char* argv[]){
 	cout << "actual error    = " << setw(width) << result - expected << endl;
 	cout << "intervals =  " << w->size << endl;
 	
+	//free up memory.
+	gsl_integration_workspace_free (&w);
 	
 	return 0;
 }

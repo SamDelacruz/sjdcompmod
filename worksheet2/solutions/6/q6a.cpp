@@ -39,8 +39,8 @@ int main(int argc, char* argv[]){
 	//END COMMAND LINE ARGUMENT CHECKING
 	
 	//Set up variables for integration
-	double lower_lim 	= 0.0f;//lower integration limit
-	double upper_lim 	= 2.0f;//upper integration limit
+	double lower_lim 	= 0.0;//lower integration limit
+	double upper_lim 	= 2.0;//upper integration limit
 	double rel_error 	= 1e-10;//Relative error
 	double abs_error	= 1e-10;//Absolute error
 	double expected = 0.466629662593175; //analytic value of integral to 15dp
@@ -67,7 +67,7 @@ int main(int argc, char* argv[]){
 	cout << "intervals =  " << w->size << endl;
 	
 	//free up memory.
-	gsl_integration_workspace_free (&w);
+	gsl_integration_workspace_free (w);
 	
 	return 0;
 }

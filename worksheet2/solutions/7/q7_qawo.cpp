@@ -46,8 +46,8 @@ int main(int argc, char* argv[]){
 	double abs_error	= 1e-10;//Absolute error
 	double expected		= -0.209672479661165; //analytic value of integral to 15dp
 	double result, error; // results of integration will be stored here
-	double omega 		= 30.0f;
-	double L 			= 2.0f * M_PI;
+	double omega 		= 30.0;
+	double L 			= 2.0 * M_PI;
 	
 	gsl_integration_workspace *w = gsl_integration_workspace_alloc (1000);
 	

@@ -44,7 +44,7 @@ int main(int argc, char* argv[]){
 	double upper_lim 	= 2.0f;//upper integration limit
 	double rel_error 	= 1e-10;//Relative error
 	double abs_error	= 1e-10;//Absolute error
-	double expected		= -0.209672479661165f; //analytic value of integral to 15dp
+	double expected		= -0.209672479661165; //analytic value of integral to 15dp
 	double result, error; // results of integration will be stored here
 	double omega 		= 30.0f;
 	double L 			= 2.0f * M_PI;
