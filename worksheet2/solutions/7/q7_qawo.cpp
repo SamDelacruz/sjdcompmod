@@ -77,11 +77,11 @@ int main(int argc, char* argv[]){
   	
   	//output results to screen
 	int width = 20;  // setw width for output
-	cout << "result				= " << setw(width) << result << endl;
-	cout << "exact result		= " << setw(width) << expected << endl;
-	cout << "estimated error	= " << setw(width) << error << endl;
-	cout << "actual error		= " << setw(width) << result - expected << endl;
-	cout << "f(x) calls			=  " << f_counter << endl;
+	cout << "result          = " << setw(width) << result << endl;
+	cout << "exact result    = " << setw(width) << expected << endl;
+	cout << "estimated error = " << setw(width) << error << endl;
+	cout << "actual error    = " << setw(width) << result - expected << endl;
+	cout << "f(x) calls =  " << f_counter << endl;
 	
 	//write data to file
 	ofstream dataFile(filename.c_str());
