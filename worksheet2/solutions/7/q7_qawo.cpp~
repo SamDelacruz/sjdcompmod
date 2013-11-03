@@ -21,9 +21,13 @@ using namespace std;
 #include <gsl/gsl_integration.h>//GSL Integration routines
 #include <gsl/gsl_math.h> //defines the values of certain mathematical constants
 
+int f_counter = 0;//counter for number of function calls to f(x)
+
 //Function to be integrated. Params is needed by GSL, but unused in this case
 double f (double x, void * params) {
-  return x*cos(x);
+	
+	f_counter++;//increment counter for function call
+	return x*cos(x);
 }
 
 int main(int argc, char* argv[]){
@@ -46,8 +50,8 @@ int main(int argc, char* argv[]){
 	double abs_error	= 1e-10;//Absolute error
 	double expected		= -0.209672479661165; //analytic value of integral to 15dp
 	double result, error; // results of integration will be stored here
-	double omega 		= 30.0f;
-	double L 			= 2.0f * M_PI;
+	double omega 		= 30.0;
+	double L 			= 2.0 * M_PI;
 	
 	gsl_integration_workspace *w = gsl_integration_workspace_alloc (1000);
 	
@@ -68,14 +72,14 @@ int main(int argc, char* argv[]){
 							t, &result, &error);
 	
 	cout.setf (ios::fixed, ios::floatfield);	// output in fixed format
-  	cout.precision (18);		// 18 digits in doubles
+  	cout.precision (15);		// 18 digits in doubles
   
 	int width = 20;  // setw width for output
 	cout << "result          = " << setw(width) << result << endl;
 	cout << "exact result    = " << setw(width) << expected << endl;
 	cout << "estimated error = " << setw(width) << error << endl;
 	cout << "actual error    = " << setw(width) << result - expected << endl;
-	cout << "intervals =  " << w->size << endl;
+	cout << "f(x) calls =  " << f_counter << endl;
 	
 	//free up memory
 	gsl_integration_qawo_table_free (t);

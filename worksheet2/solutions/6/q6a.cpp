@@ -20,9 +20,12 @@ using namespace std;
 #include <gsl/gsl_errno.h>//GSL status return values and convenience functions
 #include <gsl/gsl_integration.h>//GSL Integration routines
 
+int f_counter = 0;//counter for number of function calls to f(x)
+
 //Function to be integrated. Params is needed by GSL, but unused in this case
 double f (double x, void * params) {
-  return exp((-1)*x)*sin(x);
+	f_counter++;//increment counter for function call
+	return exp((-1)*x)*sin(x);
 }
 
 int main(int argc, char* argv[]){
@@ -57,14 +60,14 @@ int main(int argc, char* argv[]){
 							1000, w, &result, &error);
 	
 	cout.setf (ios::fixed, ios::floatfield);	// output in fixed format
-  	cout.precision (18);		// 18 digits in doubles
+  	cout.precision (15);		// 18 digits in doubles
   
 	int width = 20;  // setw width for output
 	cout << "result          = " << setw(width) << result << endl;
 	cout << "exact result    = " << setw(width) << expected << endl;
 	cout << "estimated error = " << setw(width) << error << endl;
 	cout << "actual error    = " << setw(width) << result - expected << endl;
-	cout << "intervals =  " << w->size << endl;
+	cout << "f(x) calls =  " << f_counter << endl;
 	
 	//free up memory.
 	gsl_integration_workspace_free (w);
