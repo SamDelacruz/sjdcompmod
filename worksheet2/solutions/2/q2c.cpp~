@@ -29,7 +29,7 @@ double f(double);
 double trapezium(double,double,int);
 vector<vector<double> > getResults(int,int,double,double,double);
 
-//CONSTANTS
+//CONSTANTS (the integration limits of the problem)
 const double X_MIN = 0.0f;
 const double X_MAX = 2.0f;
 
@@ -167,7 +167,7 @@ void resultsToFile(vector<vector<double> >& results, string fname){
 
 			//newline
 			dataFile << endl;
-
+			dataFile << "\nf(x) calls			=  " << f_counter << endl;
 		}
 	}
 }

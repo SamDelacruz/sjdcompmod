@@ -37,6 +37,8 @@ const double X_MAX = 2.0f;
 const int N_MIN = 2;//minimum number of segments to split f(x) into
 const double PI = acos(-1.0f);
 
+int f_counter = 0;
+
 int main(int argc, char* argv[]){
 	
 	//BEGIN COMMAND LINE ARGUMENT CHECKING
@@ -77,7 +79,7 @@ int main(int argc, char* argv[]){
 }
 
 double f(double x){
-
+	f_counter++;//increment function call counter
 	return exp((-1.0f)*x)*sin(x);
 
 }
@@ -187,6 +189,7 @@ void resultsToScreen(vector<vector<double> >& results){
 
 		//newline
 		cout << endl;
+		cout << "\nf(x) calls			=  " << f_counter << endl;
 
 	}
 }
@@ -209,7 +212,7 @@ void resultsToFile(vector<vector<double> >& results, string fname){
 
 			//newline
 			dataFile << endl;
-
+			dataFile << "\nf(x) calls			=  " << f_counter << endl;
 		}
 	}
 }

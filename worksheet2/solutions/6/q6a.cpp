@@ -69,6 +69,17 @@ int main(int argc, char* argv[]){
 	cout << "actual error    = " << setw(width) << result - expected << endl;
 	cout << "f(x) calls =  " << f_counter << endl;
 	
+	//write data to file
+	ofstream dataFile(filename.c_str());
+
+	if(dataFile.is_open()){
+		dataFile << "result				= " << setw(width) << result << endl;
+		dataFile << "exact result		= " << setw(width) << expected << endl;
+		dataFile << "estimated error	= " << setw(width) << error << endl;
+		dataFile << "actual error		= " << setw(width) << result - expected << endl;
+		dataFile << "f(x) calls			=  " << f_counter << endl;
+	}
+	
 	//free up memory.
 	gsl_integration_workspace_free (w);
 	

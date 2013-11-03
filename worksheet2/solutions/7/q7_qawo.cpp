@@ -45,13 +45,12 @@ int main(int argc, char* argv[]){
 	
 	//Set up variables for integration
 	double lower_lim 	= 0.0f;//lower integration limit
-	double upper_lim 	= 2.0f;//upper integration limit
 	double rel_error 	= 1e-10;//Relative error
 	double abs_error	= 1e-10;//Absolute error
 	double expected		= -0.209672479661165; //analytic value of integral to 15dp
 	double result, error; // results of integration will be stored here
-	double omega 		= 30.0;
-	double L 			= 2.0 * M_PI;
+	double omega 		= 30.0;//from w(x) = sin(\omega*x)
+	double L 			= 2.0 * M_PI;//Size of region to integrate over
 	
 	gsl_integration_workspace *w = gsl_integration_workspace_alloc (1000);
 	
@@ -73,14 +72,25 @@ int main(int argc, char* argv[]){
 	
 	cout.setf (ios::fixed, ios::floatfield);	// output in fixed format
   	cout.precision (15);		// 18 digits in doubles
-  
+  	
+  	//output results to screen
 	int width = 20;  // setw width for output
-	cout << "result          = " << setw(width) << result << endl;
-	cout << "exact result    = " << setw(width) << expected << endl;
-	cout << "estimated error = " << setw(width) << error << endl;
-	cout << "actual error    = " << setw(width) << result - expected << endl;
-	cout << "f(x) calls =  " << f_counter << endl;
+	cout << "result				= " << setw(width) << result << endl;
+	cout << "exact result		= " << setw(width) << expected << endl;
+	cout << "estimated error	= " << setw(width) << error << endl;
+	cout << "actual error		= " << setw(width) << result - expected << endl;
+	cout << "f(x) calls			=  " << f_counter << endl;
 	
+	//write data to file
+	ofstream dataFile(filename.c_str());
+
+	if(dataFile.is_open()){
+		dataFile << "result				= " << setw(width) << result << endl;
+		dataFile << "exact result		= " << setw(width) << expected << endl;
+		dataFile << "estimated error	= " << setw(width) << error << endl;
+		dataFile << "actual error		= " << setw(width) << result - expected << endl;
+		dataFile << "f(x) calls			=  " << f_counter << endl;
+	}
 	//free up memory
 	gsl_integration_qawo_table_free (t);
 	gsl_integration_workspace_free (w);
