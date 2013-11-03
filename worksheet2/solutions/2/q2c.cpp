@@ -34,6 +34,8 @@ const double X_MIN = 0.0f;
 const double X_MAX = 2.0f;
 const double expected = 0.466629662593175;//analytical integration value to 15dp
 
+int f_counter = 0;//function call counter
+
 int main(int argc, char* argv[]){
 	
 	//BEGIN COMMAND LINE ARGUMENT CHECKING
@@ -81,6 +83,7 @@ int main(int argc, char* argv[]){
 
 double f(double x){
 
+	f_counter++;//increment function call counter
 	return exp((-1.0f)*x)*sin(x);
 
 }

@@ -39,7 +39,7 @@ const int N_MIN = 2;//minimum number of segments to split f(x) into
 const double PI = acos(-1.0f);
 
 
-int f_counter = 0;
+int f_counter = 0;//function call counter
 
 int main(int argc, char* argv[]){
 	
