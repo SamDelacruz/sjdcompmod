@@ -83,6 +83,7 @@ int main(int argc, char* argv[]){
 
 double f(double x){
 
+	f_counter++;//increment function call counter
 	return exp((-1.0f)*x)*sin(x);
 
 }
