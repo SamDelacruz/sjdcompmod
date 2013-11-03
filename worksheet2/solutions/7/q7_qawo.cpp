@@ -14,6 +14,8 @@
 #include <iostream>
 #include <iomanip>
 #include <cmath>
+#include <fstream>
+#include <string>
 using namespace std;
 
 //GSL Headers

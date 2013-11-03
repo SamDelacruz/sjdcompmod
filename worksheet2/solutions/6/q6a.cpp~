@@ -73,11 +73,11 @@ int main(int argc, char* argv[]){
 	ofstream dataFile(filename.c_str());
 
 	if(dataFile.is_open()){
-		dataFile << "result          = " << setw(width) << result << endl;
-		dataFile << "exact result    = " << setw(width) << expected << endl;
-		dataFile << "estimated error = " << setw(width) << error << endl;
-		dataFile << "actual error    = " << setw(width) << result - expected << endl;
-		dataFile << "f(x) calls =  " << f_counter << endl;
+		dataFile << "result				= " << setw(width) << result << endl;
+		dataFile << "exact result		= " << setw(width) << expected << endl;
+		dataFile << "estimated error	= " << setw(width) << error << endl;
+		dataFile << "actual error		= " << setw(width) << result - expected << endl;
+		dataFile << "f(x) calls			=  " << f_counter << endl;
 	}
 	
 	//free up memory.
