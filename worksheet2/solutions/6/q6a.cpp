@@ -73,7 +73,7 @@ int main(int argc, char* argv[]){
 	
 	//write data to file
 	ofstream dataFile(filename.c_str());
-
+	dataFile.precision (15);
 	if(dataFile.is_open()){
 		dataFile << "result				= " << setw(width) << result << endl;
 		dataFile << "exact result		= " << setw(width) << expected << endl;
