@@ -41,8 +41,8 @@ int main(int argc, char* argv[]){
 	//Set up variables for integration
 	double lower_lim 	= 0.0f;//lower integration limit
 	double upper_lim 	= 2.0f;//upper integration limit
-	double rel_error 	= 1e-8;//Relative error
-	double abs_error	= 1e-8;//Absolute error
+	double rel_error 	= 1e-9;//Relative error
+	double abs_error	= 1e-9;//Absolute error
 	double expected = 0.5 - ((cos(2.0f)+sin(2.0f))/(2.0f*exp(2.0f))); //analytic value of integral
 	double result, error; // results of integration will be stored here
 	

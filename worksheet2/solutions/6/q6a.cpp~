@@ -53,7 +53,7 @@ int main(int argc, char* argv[]){
 	F.function = &f;//uses definition of f(x) for integration function
 	
 	//Perform integration routine
-	gsl_integration_qags (	&F, lower_lim, upper_lim, abs_error, rel_error
+	gsl_integration_qags (	&F, lower_lim, upper_lim, abs_error, rel_error,
 							1000, w, &result, &error);
 	
 	cout.setf (ios::fixed, ios::floatfield);	// output in fixed format
