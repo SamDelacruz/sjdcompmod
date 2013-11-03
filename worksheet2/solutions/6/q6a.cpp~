@@ -43,7 +43,7 @@ int main(int argc, char* argv[]){
 	double upper_lim 	= 2.0f;//upper integration limit
 	double rel_error 	= 1e-10;//Relative error
 	double abs_error	= 1e-10;//Absolute error
-	double expected = 0.5f - 0.5f*((cos(2.0f)+sin(2.0f))*exp(-2.0f))); //analytic value of integral
+	double expected = 0.5f - 0.5f*((cos(2.0f)+sin(2.0f))*exp(-2.0f)); //analytic value of integral
 	double result, error; // results of integration will be stored here
 	
 	gsl_integration_workspace *w = gsl_integration_workspace_alloc (1000);
