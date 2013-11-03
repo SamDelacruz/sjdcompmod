@@ -1,0 +1,5 @@
+result				=    0.466629662593176
+exact result		=    0.466629662593175
+estimated error	= 5.18062995384012e-15
+actual error		= 5.55111512312578e-16
+f(x) calls			=  21
