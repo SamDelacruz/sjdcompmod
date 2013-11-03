@@ -78,8 +78,8 @@ int main(int argc, char* argv[]){
 	cout << "intervals =  " << w->size << endl;
 	
 	//free up memory
-	gsl_integration_qawo_table_free (&t);
-	gsl_integration_workspace_free (&w);
+	gsl_integration_qawo_table_free (t);
+	gsl_integration_workspace_free (w);
 	
 	return 0;
 }
