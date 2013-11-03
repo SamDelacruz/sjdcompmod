@@ -189,7 +189,7 @@ void resultsToScreen(vector<vector<double> >& results){
 
 		//newline
 		cout << endl;
-		cout << f_counter << endl;//print function call counter
+		cout << "\nf(x) calls			=  " << f_counter << endl;
 
 	}
 }
@@ -212,7 +212,7 @@ void resultsToFile(vector<vector<double> >& results, string fname){
 
 			//newline
 			dataFile << endl;
-			dataFile << f_counter << endl;//print function call counter
+			dataFile << "\nf(x) calls			=  " << f_counter << endl;
 		}
 	}
 }

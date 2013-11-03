@@ -34,24 +34,25 @@ vector<vector<double> > getResults(int,int,double,double,double);
 //CONSTANTS (the integration limits of the problem)
 const double X_MIN = 0.0f;
 const double X_MAX = 2.0f;
+const double expected = 0.466629662593175;//analytical integration value to 15dp
 const int N_MIN = 2;//minimum number of segments to split f(x) into
 const double PI = acos(-1.0f);
+
 
 int f_counter = 0;
 
 int main(int argc, char* argv[]){
 	
 	//BEGIN COMMAND LINE ARGUMENT CHECKING
-	if(argc < 4){
+	if(argc < 3){
 		//inform the user of correct usage
-		cout << "Correct usage: " << argv[0] << " sf expected_value output_file_name" << endl;
+		cout << "Correct usage: " << argv[0] << " sf output_file_name" << endl;
 		return -1;
 	}
 	
 	//Parse user input
 	int sf = atoi(argv[1]);
-	double expected = atof(argv[2]);
-	string filename = argv[3];
+	string filename = argv[2];
 	//check for positive sf value
 	if(sf < 0){
 		cout << "Error: Positive sf only" << endl;

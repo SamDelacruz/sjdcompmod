@@ -145,7 +145,7 @@ void resultsToScreen(vector<vector<double> >& results){
 
 		//newline
 		cout << endl;
-
+		cout << "\nf(x) calls			=  " << f_counter << endl;
 	}
 }
 

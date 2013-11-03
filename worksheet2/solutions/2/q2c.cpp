@@ -32,22 +32,21 @@ vector<vector<double> > getResults(int,int,double,double,double);
 //CONSTANTS (the integration limits of the problem)
 const double X_MIN = 0.0f;
 const double X_MAX = 2.0f;
-
+const double expected = 0.466629662593175;//analytical integration value to 15dp
 
 int main(int argc, char* argv[]){
 	
 	//BEGIN COMMAND LINE ARGUMENT CHECKING
-	if(argc < 5){
+	if(argc < 4){
 		//inform the user of correct usage
-		cout << "Correct usage: " << argv[0] << " n_min n_max expected_value output_file_name" << endl;
+		cout << "Correct usage: " << argv[0] << " n_min n_max output_file_name" << endl;
 		return -1;
 	}
 	
 	//Parse user input
 	int n_min = atoi(argv[1]);
 	int n_max = atoi(argv[2]);
-	double expected = atof(argv[3]);
-	string filename = argv[4];
+	string filename = argv[3];
 	//check for positive N
 	if(n_min < 0 || n_max < 0){
 	
