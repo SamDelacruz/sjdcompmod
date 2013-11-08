@@ -142,9 +142,6 @@ void saveResults(vector< vector<double> >& results, string fname){
 
 	if(dataFile.is_open()){
 
-		//print headers
-		dataFile << "\nn\ty(pi/4)\tError\n";
-		
 		//Iterate over each n value
 		for(int n = 0; n < results.at(0).size(); n++){
 			
@@ -163,4 +160,6 @@ void saveResults(vector< vector<double> >& results, string fname){
 
 		}
 	}
+	
+	dataFile.close()
 }

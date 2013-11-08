@@ -61,7 +61,7 @@ int main(int argc, char* argv[]){
 	table.at(1) = errors;
 	
 	printResults(table);
-	saveResults(table);
+	saveResults(table,filename);
 	
 	return 0;
 }
@@ -142,9 +142,6 @@ void saveResults(vector< vector<double> >& results, string fname){
 
 	if(dataFile.is_open()){
 
-		//print headers
-		dataFile << "\nn\ty(pi/4)\tError\n";
-		
 		//Iterate over each n value
 		for(int n = 0; n < results.at(0).size(); n++){
 			
