@@ -21,7 +21,7 @@
 using namespace std;
 
 void printResults(vector< vector<double> > &);
-void saveResults(vector< vector<double> > &);
+void saveResults(vector< vector<double> > &,string);
 double f(double);
 double euler(int,double);
 vector<double> euler_multi(double,int);
@@ -54,7 +54,7 @@ int main(int argc, char* argv[]){
 	//END COMMAND LINE ARGUMENT CHECKING	
 	
 	vector<double> euler_results = euler_multi(PI_4,n_max);
-	vector<double> errors = get_errors(euler_results);
+	vector<double> errors = get_errors(EXPECTED,euler_results);
 	
 	vector<vector<double> > table(2);
 	table.at(0) = euler_results;
@@ -136,7 +136,7 @@ void printResults(vector< vector<double> >& results){
 	}
 }
 
-void fileMultiple(vector< vector<double> >& results, string fname){
+void saveResults(vector< vector<double> >& results, string fname){
 
 	ofstream dataFile(fname.c_str());
 
