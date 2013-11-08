@@ -161,5 +161,5 @@ void saveResults(vector< vector<double> >& results, string fname){
 		}
 	}
 	
-	dataFile.close()
+	dataFile.close();
 }
