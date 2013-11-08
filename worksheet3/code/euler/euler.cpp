@@ -30,6 +30,7 @@ vector<double> get_errors(double,vector<double>&);
 
 //Constants
 const double PI_4 = (double)0.25*acos(-1.0);//pi/4
+const double EXPECTED = (double)1.0;//tan(pi/4)
 
 int main(int argc, char* argv[]){
 
@@ -80,4 +81,86 @@ double euler(int n, double h){
 	
 	double y_prev = euler(n-1,h);
 	return y_prev + h*f(y_prev);
+}
+
+vector<double> euler_multi(double x_max,int n_max){
+
+	vector<double> results(n_max);
+	
+	for(int i = 0; i < results.size(); i++){
+	
+		double h = x_max / (double)(i+1);//i+1 due to index starting at 0
+		results.at(i) = euler(i+1,h);
+	
+	}
+	
+	return results;
+
+}
+
+vector<double> get_errors(double expected, vector<double> &values){
+
+	vector<double> errors(values.size());
+	
+	for(int i = 0; i < errors.size(); i++){
+	
+		errors.at(i) = (double)abs(expected - values.at(i));
+	
+	}
+	
+	return errors;
+
+}
+
+void printResults(vector< vector<double> >& results){
+
+	//print headers
+	cout << "\nn\ty(pi/4)\tError\n";
+	
+	//Iterate over each n value
+	for(int n = 0; n < results.at(0).size(); n++){
+		
+		//print iteration number
+		cout << n+1 << "\t";
+		
+		//Iterate over columns
+		for(int j = 0; j < results.size(); j++){
+
+			cout << setprecision(15) << scientific << results.at(j).at(n) << "\t";
+
+		}
+
+		//newline
+		cout << endl;
+
+	}
+}
+
+void fileMultiple(vector< vector<double> >& results, string fname){
+
+	ofstream dataFile(fname.c_str());
+
+	if(dataFile.is_open()){
+
+		//print headers
+		dataFile << "\nn\ty(pi/4)\tError\n";
+		
+		//Iterate over each n value
+		for(int n = 0; n < results.at(0).size(); n++){
+			
+			//print iteration number
+			dataFile << n+1 << "\t";
+			
+			//Iterate over columns
+			for(int j = 0; j < results.size(); j++){
+
+				dataFile << setprecision(15) << scientific << results.at(j).at(n) << "\t";
+
+			}
+
+			//newline
+			dataFile << endl;
+
+		}
+	}
 }
