@@ -83,7 +83,7 @@ int main(int argc, char* argv[]){
 
 }
 
-
+//Function fills two results vectors with results, given starting parameters
 void runge_kutta(double h, vector<double>& xs, vector<double>& ps, int i, int n_max){
 	
 	//iterate over all n
