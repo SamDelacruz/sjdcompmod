@@ -53,26 +53,33 @@ int main(int argc, char* argv[]){
 	}
 	//END COMMAND LINE ARGUMENT CHECKING	
 	
+	cout << "\n\n||Calculating results, please wait...||\n";
+	//Get results and errors, for y(pi/4), and up to max n specified
 	vector<double> euler_results = euler_multi(PI_4,n_max);
 	vector<double> errors = get_errors(EXPECTED,euler_results);
 	
+	//Store them in a 'table'
 	vector<vector<double> > table(2);
 	table.at(0) = euler_results;
 	table.at(1) = errors;
 	
+
 	printResults(table);
+	cout << "\n||Operation Successful, saving results to " + filename + "||";
 	saveResults(table,filename);
 	
 	return 0;
 }
 
-
+//[ dy/dt = 1 + y^2 ]
 double f(double y){
 
 	return (double)1.0 + pow(y,(double)2.0);
 
 }
 
+//Recursive function for retrieving nth value using euler method
+//
 double euler(int n, double h){
 
 	if(n == 0){
@@ -83,6 +90,7 @@ double euler(int n, double h){
 	return y_prev + h*f(y_prev);
 }
 
+//Perform multiple Euler method solutions for different number of n
 vector<double> euler_multi(double x_max,int n_max){
 
 	vector<double> results(n_max);
@@ -98,6 +106,7 @@ vector<double> euler_multi(double x_max,int n_max){
 
 }
 
+//Iterate over all results and compare to expected result
 vector<double> get_errors(double expected, vector<double> &values){
 
 	vector<double> errors(values.size());
@@ -112,6 +121,7 @@ vector<double> get_errors(double expected, vector<double> &values){
 
 }
 
+//Print results to screen
 void printResults(vector< vector<double> >& results){
 
 	//print headers
@@ -136,6 +146,7 @@ void printResults(vector< vector<double> >& results){
 	}
 }
 
+//Save results to file
 void saveResults(vector< vector<double> >& results, string fname){
 
 	ofstream dataFile(fname.c_str());
@@ -161,5 +172,5 @@ void saveResults(vector< vector<double> >& results, string fname){
 		}
 	}
 	
-	dataFile.close()
+	dataFile.close();
 }

@@ -4,7 +4,7 @@
 * Data is output to file (name defined in command line arguments).
 * 
 * User must supply output file name in the following format:
-* Eg) > ./q6a.o q6a-01.dat
+* Eg) > ./q7_qawo.o q7_qawo-01.dat
 * 
 * Name:		Samuel Delacruz
 * ID:		1090154
@@ -85,7 +85,8 @@ int main(int argc, char* argv[]){
 	
 	//write data to file
 	ofstream dataFile(filename.c_str());
-
+	dataFile.precision (15);
+	
 	if(dataFile.is_open()){
 		dataFile << "result				= " << setw(width) << result << endl;
 		dataFile << "exact result		= " << setw(width) << expected << endl;

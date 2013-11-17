@@ -5,6 +5,8 @@
 * 
 * User must supply output file name in the following format:
 * Eg) > ./q6a.o q6a-01.dat
+*
+* This program uses version 1.13 of the GNU Scientific Library (GSL)
 * 
 * Name:		Samuel Delacruz
 * ID:		1090154

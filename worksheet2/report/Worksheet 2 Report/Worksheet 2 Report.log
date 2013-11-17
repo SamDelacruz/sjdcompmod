@@ -1,17 +1,18 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2013.11.1)  1 NOV 2013 16:00
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.25)  4 NOV 2013 13:31
 entering extended mode
-**Worksheet*2*Report.tex
-("U:\sjdcompmod\worksheet2\report\Worksheet 2 Report\Worksheet 2 Report.tex"
-LaTeX2e <2009/09/24>
-Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, german, ngerman, german-x-2009-06-19, ngerm
-an-x-2009-06-19, french, loaded.
-("U:\sjdcompmod\worksheet2\report\Worksheet 2 Report\UoBnote.cls"
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**"Worksheet 2 Report.tex"
+(./Worksheet 2 Report.tex
+LaTeX2e <2011/06/27>
+Babel <3.9f> and hyphenation patterns for 2 languages loaded.
+(./UoBnote.cls
 
 LaTeX Warning: You have requested document class `UoBnote',
                but the document class provides `standard-doc'.
 
 Document Class: standard-doc 2001/03/03 UoBnote class
-("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\fancyhdr\fancyhdr.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip41
 \f@ncyO@elh=\skip42
 \f@ncyO@erh=\skip43
@@ -22,37 +23,44 @@ Document Class: standard-doc 2001/03/03 UoBnote class
 \f@ncyO@olf=\skip48
 \f@ncyO@orf=\skip49
 )
-("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\lastpage\lastpage.sty"
-Package: lastpage 1994/06/25 v0.1b LaTeX2e package for refs to last page number (JPG)
+(/usr/share/texlive/texmf-dist/tex/latex/lastpage/lastpage.sty
+Package: lastpage 2013/01/28 v1.2l Refers to last page's name (HMM; JPG)
 )
-("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\graphicx.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\keyval.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\graphics.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\trig.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\pdftex-def\pdftex.def"
-File: pdftex.def 2010/02/14 v0.04n Graphics/color for pdfTeX
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
 \Gread@gobject=\count79
 ))
 \Gin@req@height=\dimen102
 \Gin@req@width=\dimen103
 )
-("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\article.cls"
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\size10.clo"
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count80
@@ -67,177 +75,396 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip51
 \bibindent=\dimen104
 )
-("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\color.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\00miktex\color.cfg"
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
-) note completed OK)
-("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\oberdiek\epstopdf.sty"
+)
+note completed OK)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf.sty
 Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
 
-("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\oberdiek\epstopdf-base.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\infwarerr.sty"
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
-)
-("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\oberdiek\grfext.sty"
-Package: grfext 2007/09/30 v1.0 Managing graphics extensions (HO)
-)
-("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\oberdiek\kvoptions.sty"
-Package: kvoptions 2010/02/22 v3.7 Keyval support for LaTeX options (HO)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 
-("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\kvsetkeys.sty"
-Package: kvsetkeys 2010/03/01 v1.9 Key value parser (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 
-("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\etexcmds.sty"
-Package: etexcmds 2010/01/28 v1.3 Prefix for e-TeX command names (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
-("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\pdftexcmds.sty"
-Package: pdftexcmds 2010/04/01 v0.9 Utility functions of pdfTeX for LuaTeX (HO)
-
-("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\ifluatex.sty"
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
-("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\ltxcmds.sty"
-Package: ltxcmds 2010/04/26 v1.7 LaTeX kernel commands for general use (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
 )
 Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 436.
-))
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count88
+\float@exts=\toks15
+\float@box=\box26
+\@float@everytoks=\toks16
+\@floatcapt=\box27
+)
 
 LaTeX Warning: Unused global option(s):
     [pdf].
 
-("U:\sjdcompmod\worksheet2\report\Worksheet 2 Report\Worksheet 2 Report.aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
+(./Worksheet 2 Report.aux)
+\openout1 = `"Worksheet 2 Report.aux"'.
 
-("C:\Program Files (x86)\MiKTeX 2.8\tex\context\base\supp-pdf.tex"
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             http://www.ctan.org/tex-archive/ 
+(lastpage)             macros/latex/contrib/pageslts/ 
+(lastpage)             or
+(lastpage)             http://www.ctan.org/tex-archive/ 
+(lastpage)             install/macros/latex/contrib/pageslts.tds.zip
+(lastpage)             ! on input line 13.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count88
+\scratchcounter=\count89
 \scratchdimen=\dimen105
-\scratchbox=\box26
-\nofMPsegments=\count89
-\nofMParguments=\count90
-\everyMPshowfont=\toks15
-\MPscratchCnt=\count91
+\scratchbox=\box28
+\nofMPsegments=\count90
+\nofMParguments=\count91
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count92
 \MPscratchDim=\dimen106
-\MPnumerator=\count92
-\everyMPtoPDFconversion=\toks16
+\MPnumerator=\count93
+\makeMPintoPDFobject=\count94
+\everyMPtoPDFconversion=\toks18
 ) <bhamlogo.pdf, id=1, 756.73315pt x 323.16734pt>
 File: bhamlogo.pdf Graphic file (type pdf)
  <use bhamlogo.pdf>
+Package pdftex.def Info: bhamlogo.pdf used on input line 32.
+(pdftex.def)             Requested size: 151.34395pt x 64.63231pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 31.
+(Font)              <12> on input line 32.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 31.
+(Font)              <8> on input line 32.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 31.
+(Font)              <6> on input line 32.
  [1
 
-{C:/ProgramData/MiKTeX/2.8/pdftex/config/pdftex.map} <U:/sjdcompmod/worksheet2/report/Worksheet 2 Report/bhamlogo.pdf>]
-("U:\sjdcompmod\worksheet2\report\Worksheet 2 Report\Worksheet 2 Report.toc"
+{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map} <./bhamlogo.
+pdf>]
+(./Worksheet 2 Report.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 3.
 )
 \tf@toc=\write3
+\openout3 = `"Worksheet 2 Report.toc"'.
+
+ (./Worksheet 2 Report.lof)
+\tf@lof=\write4
+\openout4 = `"Worksheet 2 Report.lof"'.
+
+ (./Worksheet 2 Report.lot)
+\tf@lot=\write5
+\openout5 = `"Worksheet 2 Report.lot"'.
+
+ [1]
 Package epstopdf Info: Source file: <figures/q2b.eps>
-(epstopdf)                    date: 2013-10-31 22:16:26
-(epstopdf)                    size: 18130 bytes
+(epstopdf)                    date: 2013-11-02 20:24:37
+(epstopdf)                    size: 18310 bytes
 (epstopdf)             Output file: <figures/q2b-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-11-01 15:36:34
-(epstopdf)                    size: 3707 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures/q2b-eps-converted-to.pdf figures/q2b.eps>
-(epstopdf)             \includegraphics on input line 72.
+(epstopdf)                    date: 2013-11-04 10:10:35
+(epstopdf)                    size: 6589 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/q2b-eps-converted-
+to.pdf figures/q2b.eps>
+(epstopdf)             \includegraphics on input line 76.
 Package epstopdf Info: Output file is already uptodate.
-
-<figures/q2b-eps-converted-to.pdf, id=15, 361.35pt x 252.945pt>
+ <figures/q2b-eps-converted-to.pdf, id=27, 361.35pt x 252.945pt>
 File: figures/q2b-eps-converted-to.pdf Graphic file (type pdf)
- <use figures/q2b-eps-converted-to.pdf>
-Package epstopdf Info: Source file: <figures/q2-f2x-trap.eps>
-(epstopdf)                    date: 2013-10-31 22:22:56
-(epstopdf)                    size: 17763 bytes
-(epstopdf)             Output file: <figures/q2-f2x-trap-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-11-01 15:41:26
-(epstopdf)                    size: 3644 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures/q2-f2x-trap-eps-converted-to.pdf figures/q2-f2x-trap.eps>
-(epstopdf)             \includegraphics on input line 80.
-Package epstopdf Info: Output file is already uptodate.
 
-<figures/q2-f2x-trap-eps-converted-to.pdf, id=16, 361.35pt x 252.945pt>
-File: figures/q2-f2x-trap-eps-converted-to.pdf Graphic file (type pdf)
- <use figures/q2-f2x-trap-eps-converted-to.pdf>
-[1]
-Package epstopdf Info: Source file: <figures/q2-f4x-simps.eps>
-(epstopdf)                    date: 2013-10-31 22:25:22
-(epstopdf)                    size: 17934 bytes
-(epstopdf)             Output file: <figures/q2-f4x-simps-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-11-01 15:43:26
-(epstopdf)                    size: 3677 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures/q2-f4x-simps-eps-converted-to.pdf figures/q2-f4x-simps.eps>
-(epstopdf)             \includegraphics on input line 108.
-Package epstopdf Info: Output file is already uptodate.
- <figures/q2-f4x-simps-eps-converted-to.pdf, id=32, 361.35pt x 252.945pt>
-File: figures/q2-f4x-simps-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/q2b-eps-converted-to.pdf>
+Package pdftex.def Info: figures/q2b-eps-converted-to.pdf used on input line 76
+.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
 
-<use figures/q2-f4x-simps-eps-converted-to.pdf>
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
 
  []
 
-[2 <U:/sjdcompmod/worksheet2/report/Worksheet 2 Report/figures/q2b-eps-converted-to.pdf>]
-AED: lastpage setting LastPage [3 <U:/sjdcompmod/worksheet2/report/Worksheet 2 Report/figures/q2-f2x-trap-eps-converted-
-to.pdf>] [4 <U:/sjdcompmod/worksheet2/report/Worksheet 2 Report/figures/q2-f4x-simps-eps-converted-to.pdf>]
-("U:\sjdcompmod\worksheet2\report\Worksheet 2 Report\Worksheet 2 Report.aux") ) 
+Package epstopdf Info: Source file: <figures/q2-f2x-trap.eps>
+(epstopdf)                    date: 2013-11-02 20:31:24
+(epstopdf)                    size: 17918 bytes
+(epstopdf)             Output file: <figures/q2-f2x-trap-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-11-04 10:10:35
+(epstopdf)                    size: 6444 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/q2-f2x-trap-eps-co
+nverted-to.pdf figures/q2-f2x-trap.eps>
+(epstopdf)             \includegraphics on input line 98.
+Package epstopdf Info: Output file is already uptodate.
+<figures/q2-f2x-trap-eps-converted-to.pdf, id=28, 361.35pt x 252.945pt>
+File: figures/q2-f2x-trap-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/q2-f2x-trap-eps-converted-to.pdf>
+Package pdftex.def Info: figures/q2-f2x-trap-eps-converted-to.pdf used on input
+ line 98.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--101
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--110
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--110
+
+ []
+
+[3 <./figures/q2b-eps-converted-to.pdf> <./figures/q2-f2x-trap-eps-converted-to
+.pdf>]
+Package epstopdf Info: Source file: <figures/q2d_labelled.eps>
+(epstopdf)                    date: 2013-11-02 20:36:05
+(epstopdf)                    size: 20463 bytes
+(epstopdf)             Output file: <figures/q2d_labelled-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2013-11-04 10:31:53
+(epstopdf)                    size: 8383 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/q2d_labelled-eps-c
+onverted-to.pdf figures/q2d_labelled.eps>
+(epstopdf)             \includegraphics on input line 116.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/q2d_labelled-eps-converted-to.pdf, id=50, 361.35pt x 252.945pt>
+File: figures/q2d_labelled-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/q2d_labelled-eps-converted-to.pdf>
+Package pdftex.def Info: figures/q2d_labelled-eps-converted-to.pdf used on inpu
+t line 116.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+Package epstopdf Info: Source file: <figures/q2e.eps>
+(epstopdf)                    date: 2013-11-02 20:38:07
+(epstopdf)                    size: 20940 bytes
+(epstopdf)             Output file: <figures/q2e-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-11-04 10:50:15
+(epstopdf)                    size: 8362 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/q2e-eps-converted-
+to.pdf figures/q2e.eps>
+(epstopdf)             \includegraphics on input line 127.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/q2e-eps-converted-to.pdf, id=51, 361.35pt x 252.945pt>
+File: figures/q2e-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/q2e-eps-converted-to.pdf>
+Package pdftex.def Info: figures/q2e-eps-converted-to.pdf used on input line 12
+7.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+ [4 <./figures/q2d_labelled-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 146--148
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--148
+
+ []
+
+Package epstopdf Info: Source file: <figures/q2g.eps>
+(epstopdf)                    date: 2013-11-02 20:45:10
+(epstopdf)                    size: 19507 bytes
+(epstopdf)             Output file: <figures/q2g-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-11-04 11:09:06
+(epstopdf)                    size: 7889 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/q2g-eps-converted-
+to.pdf figures/q2g.eps>
+(epstopdf)             \includegraphics on input line 165.
+Package epstopdf Info: Output file is already uptodate.
+<figures/q2g-eps-converted-to.pdf, id=61, 361.35pt x 252.945pt>
+File: figures/q2g-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/q2g-eps-converted-to.pdf>
+Package pdftex.def Info: figures/q2g-eps-converted-to.pdf used on input line 16
+5.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+ [5 <./figures/q2e-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
+
+ []
+
+Package epstopdf Info: Source file: <figures/q2-f4x-simps.eps>
+(epstopdf)                    date: 2013-11-02 20:31:29
+(epstopdf)                    size: 18090 bytes
+(epstopdf)             Output file: <figures/q2-f4x-simps-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2013-11-04 10:10:35
+(epstopdf)                    size: 6671 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/q2-f4x-simps-eps-c
+onverted-to.pdf figures/q2-f4x-simps.eps>
+(epstopdf)             \includegraphics on input line 192.
+Package epstopdf Info: Output file is already uptodate.
+<figures/q2-f4x-simps-eps-converted-to.pdf, id=70, 361.35pt x 252.945pt>
+File: figures/q2-f4x-simps-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/q2-f4x-simps-eps-converted-to.pdf>
+Package pdftex.def Info: figures/q2-f4x-simps-eps-converted-to.pdf used on inpu
+t line 192.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--195
+
+ []
+
+[6 <./figures/q2g-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--211
+
+ []
+
+Package epstopdf Info: Source file: <figures/q2g_computed.eps>
+(epstopdf)                    date: 2013-11-02 20:42:57
+(epstopdf)                    size: 18924 bytes
+(epstopdf)             Output file: <figures/q2g_computed-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2013-11-04 12:12:06
+(epstopdf)                    size: 8028 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/q2g_computed-eps-c
+onverted-to.pdf figures/q2g_computed.eps>
+(epstopdf)             \includegraphics on input line 218.
+Package epstopdf Info: Output file is already uptodate.
+<figures/q2g_computed-eps-converted-to.pdf, id=81, 361.35pt x 252.945pt>
+File: figures/q2g_computed-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/q2g_computed-eps-converted-to.pdf>
+Package pdftex.def Info: figures/q2g_computed-eps-converted-to.pdf used on inpu
+t line 218.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+ [7 <./figures/q2-f4x-simps-eps-converted-to.pdf>] [8 <./figures/q2g_computed-e
+ps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/q7b_labelled.eps>
+(epstopdf)                    date: 2013-11-03 13:09:22
+(epstopdf)                    size: 25847 bytes
+(epstopdf)             Output file: <figures/q7b_labelled-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2013-11-04 12:56:31
+(epstopdf)                    size: 11294 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/q7b_labelled-eps-c
+onverted-to.pdf figures/q7b_labelled.eps>
+(epstopdf)             \includegraphics on input line 269.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/q7b_labelled-eps-converted-to.pdf, id=99, 361.35pt x 252.945pt>
+File: figures/q7b_labelled-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/q7b_labelled-eps-converted-to.pdf>
+Package pdftex.def Info: figures/q7b_labelled-eps-converted-to.pdf used on inpu
+t line 269.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+ [9 <./figures/q7b_labelled-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 301--303
+
+ []
+
+[10] [11]
+Underfull \hbox (badness 10000) in paragraph at lines 382--383
+
+ []
+
+
+AED: lastpage setting LastPage
+[12] (./Worksheet 2 Report.aux) ) 
 Here is how much of TeX's memory you used:
- 1550 strings out of 495285
- 22449 string characters out of 3179875
- 75933 words of memory out of 3000000
- 4737 multiletter control sequences out of 15000+200000
- 9552 words of font info for 33 fonts, out of 3000000 for 9000
+ 1875 strings out of 495035
+ 27297 string characters out of 6181701
+ 92463 words of memory out of 5000000
+ 5046 multiletter control sequences out of 15000+600000
+ 9720 words of font info for 34 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 41i,11n,45p,296b,340s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.8/fonts/
-type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pro
-gram Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/pub
-lic/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files
- (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfont
-s/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTe
-X 2.8/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr7.pfb
-><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/typ
-e1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program 
-Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/a
-msfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86
-)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on "Worksheet 2 Report.pdf" (5 pages, 938739 bytes).
+ 42i,12n,45p,410b,269s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on "Worksheet 2 Report.pdf" (13 pages, 1002041 bytes).
 PDF statistics:
- 103 PDF objects out of 1000 (max. 8388607)
+ 176 PDF objects out of 1000 (max. 8388607)
+ 122 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

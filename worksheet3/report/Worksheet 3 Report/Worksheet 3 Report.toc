@@ -1,0 +1,12 @@
+\contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {section}{\numberline {2}Euler's Method}{2}
+\contentsline {subsection}{\numberline {2.1}Theory}{2}
+\contentsline {subsection}{\numberline {2.2}Procedure}{2}
+\contentsline {subsection}{\numberline {2.3}Results}{3}
+\contentsline {section}{\numberline {3}The Runge-Kutta method}{3}
+\contentsline {subsection}{\numberline {3.1}Theory}{3}
+\contentsline {subsection}{\numberline {3.2}Procedure}{5}
+\contentsline {subsection}{\numberline {3.3}Results}{5}
+\contentsline {section}{\numberline {4}Appendices}{5}
+\contentsline {subsection}{\numberline {4.1}Tables of Data}{5}
+\contentsline {subsubsection}{\numberline {4.1.1}Euler's Method Data}{5}

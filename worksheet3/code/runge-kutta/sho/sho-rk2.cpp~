@@ -20,7 +20,7 @@
 using namespace std;
 
 void runge_kutta(double, vector<double>&, vector<double>&, int,int);
-void saveResults(vector< vector<double> >&, string);
+void saveResults(vector< vector<double> >&, double, string);
 
 const double X_0 = 1.0;//starting point for x
 const double P_0 = 0.0;//starting p
@@ -61,6 +61,7 @@ int main(int argc, char* argv[]){
 	xs[0]= X_0;
 	ps[0]= P_0;
 	
+	//use i = 1 to start recursive calls from beginning
 	runge_kutta(dt,xs,ps,0,n_max);
 	
 	//create vector to hold all results for saving
@@ -68,7 +69,7 @@ int main(int argc, char* argv[]){
 	results[0] = xs;
 	results[1] = ps;
 	
-	saveResults(results, filename);
+	saveResults(results, dt, filename);
 	
 	return 0;
 	
@@ -99,7 +100,7 @@ void runge_kutta(double h, vector<double>& xs, vector<double>& ps, int i, int n_
 	
 }
 
-void saveResults(vector< vector<double> >& results, string fname){
+void saveResults(vector< vector<double> >& results, double dt string fname){
 
 	ofstream dataFile(fname.c_str());
 
@@ -109,7 +110,7 @@ void saveResults(vector< vector<double> >& results, string fname){
 		for(int n = 0; n < results.at(0).size(); n++){
 			
 			//print iteration number
-			dataFile << n << "\t";
+			dataFile << setprecision(15) << n*dt << "\t";
 			
 			//Iterate over columns
 			for(int j = 0; j < results.size(); j++){

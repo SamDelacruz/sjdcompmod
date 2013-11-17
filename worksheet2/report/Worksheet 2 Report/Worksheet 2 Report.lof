@@ -1,0 +1,8 @@
+\contentsline {figure}{\numberline {1}{\ignorespaces Plot of $f(x)$ in the range $[0:\pi ]$}}{3}
+\contentsline {figure}{\numberline {2}{\ignorespaces Plot of $f''(x)$ in the range $[0:2]$}}{3}
+\contentsline {figure}{\numberline {3}{\ignorespaces $\mathop {\mathgroup \symoperators log}\nolimits _{10}$ plot of $E(n)$ in the range $n = [1:10^{9}]$ (Trapezium method)}}{4}
+\contentsline {figure}{\numberline {4}{\ignorespaces $\mathop {\mathgroup \symoperators log}\nolimits _{10}$ plot of $E^T(n)$ in the range $n = [1:10^{9}]$}}{5}
+\contentsline {figure}{\numberline {5}{\ignorespaces $\mathop {\mathgroup \symoperators log}\nolimits _{10}$ plot of $E^S(n)$ in the range $n = [1:10^{6}]$}}{6}
+\contentsline {figure}{\numberline {6}{\ignorespaces Plot of $f^{\left (4\right )}(x)$ in the range $[0:2]$}}{7}
+\contentsline {figure}{\numberline {7}{\ignorespaces $\mathop {\mathgroup \symoperators log}\nolimits _{10}$ plot of $E(n)$ in the range $n = [1:10^{6}]$ (Simpson's method)}}{8}
+\contentsline {figure}{\numberline {8}{\ignorespaces Plot of $f(x)$ in the range $[0:2\pi ]$}}{9}
