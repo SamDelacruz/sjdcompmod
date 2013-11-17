@@ -54,6 +54,7 @@ int main(int argc, char* argv[]){
 	}
 	//END COMMAND LINE ARGUMENT CHECKING
 	
+	
 	vector<double> xs(n_max+1);
 	vector<double> ps(n_max+1);
 	
@@ -61,8 +62,14 @@ int main(int argc, char* argv[]){
 	xs[0]= X_0;
 	ps[0]= P_0;
 	
+	cout << "\n\n|| Starting second order Runge-Kutta method for following params ||\n";
+	cout << "|| \tdt = " << setprecision(15) dt << " \t\t||\n";
+	cout << "|| \tn_max = " << n << " \t\t\||\n";
+	cout << "|| \tfilename = " << filename << " \t\t||\n";
+	
 	//use i = 1 to start recursive calls from beginning
 	runge_kutta(dt,xs,ps,0,n_max);
+	cout << "\nRunge-Kutta method complete.\n";
 	
 	//create vector to hold all results for saving
 	vector<vector<double> > results (2);
@@ -70,7 +77,7 @@ int main(int argc, char* argv[]){
 	results[1] = ps;
 	
 	saveResults(results, dt, filename);
-	
+	cout << "\nResults saved to " << filename <<"\n";
 	return 0;
 	
 
