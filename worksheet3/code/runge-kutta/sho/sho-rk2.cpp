@@ -63,8 +63,8 @@ int main(int argc, char* argv[]){
 	ps[0]= P_0;
 	
 	cout << "\n\n|| Starting second order Runge-Kutta method for following params ||\n";
-	cout << "|| \tdt = " << setprecision(15) dt << " \t\t||\n";
-	cout << "|| \tn_max = " << n << " \t\t\||\n";
+	cout << "|| \tdt = " << setprecision(15) << dt << " \t\t||\n";
+	cout << "|| \tn_max = " << n_max << " \t\t||\n";
 	cout << "|| \tfilename = " << filename << " \t\t||\n";
 	
 	//use i = 1 to start recursive calls from beginning
