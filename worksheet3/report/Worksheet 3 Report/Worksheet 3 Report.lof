@@ -1,1 +1,7 @@
 \contentsline {figure}{\numberline {1}{\ignorespaces Plot of Euler's method relative error vs interval width}}{3}
+\contentsline {figure}{\numberline {2}{\ignorespaces Second order Runge-Kutta method. Position vs. Time for $dt = 0.5, n = 100$}}{5}
+\contentsline {figure}{\numberline {3}{\ignorespaces Second order Runge-Kutta method. Phase plot of Momentum vs. Position for $dt = 0.5, n = 100$}}{6}
+\contentsline {figure}{\numberline {4}{\ignorespaces Second order Runge-Kutta method. Phase plot of Momentum vs. Position for $dt = 0.5, n = 100$}}{6}
+\contentsline {figure}{\numberline {5}{\ignorespaces Second order Runge-Kutta method. Position vs. Time for $dt = 0.02, n = 2500$}}{7}
+\contentsline {figure}{\numberline {6}{\ignorespaces Second order Runge-Kutta method. Phase plot of Momentum vs. Position for $dt = 0.02, n = 2500$}}{8}
+\contentsline {figure}{\numberline {7}{\ignorespaces Second order Runge-Kutta method. Phase plot of Momentum vs. Position for $dt = 0.02, n = 2500$}}{8}
